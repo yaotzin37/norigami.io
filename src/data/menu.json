@@ -13,7 +13,7 @@
     "price": 39,
     "description": "",
     "category": "Bebidas",
-    "image": "/src/assets/images/menu/bebidas/calpico.png"
+    "image": "/assets/images/menu/bebidas/calpico.png"
   },
   {
     "id": "t-helado-jazmn",
@@ -469,7 +469,7 @@
     "price": 89,
     "description": "",
     "category": "Postres",
-    "image": "/src/assets/images/menu/postres/helado-frito.png"
+    "image": "/assets/images/menu/postres/helado-frito.png"
   },
   {
     "id": "pltanos-flameados",
@@ -1245,7 +1245,7 @@
     "price": 216,
     "description": "Camarón y aguacate. Pepino.  zanahoria",
     "category": "Sushi Especial",
-    "image": "/src/assets/images/menu/sushi/dragon-roll.png"
+    "image": "/assets/images/menu/sushi/dragon-roll.png"
   },
   {
     "id": "takis-roll",
@@ -1253,7 +1253,7 @@
     "price": 225,
     "description": "Philadelphia y Takis Flamin' Hot. Camarón.  aguacate",
     "category": "Sushi Especial",
-    "image": "/src/assets/images/menu/sushi/dragon-roll.png"
+    "image": "/assets/images/menu/sushi/dragon-roll.png"
   },
   {
     "id": "sushi-pizza",
@@ -1261,7 +1261,7 @@
     "price": 225,
     "description": "Empanizado sin alga. Arrachera de cerdo.  aguacate",
     "category": "Sushi Especial",
-    "image": "/src/assets/images/menu/sushi/dragon-roll.png"
+    "image": "/assets/images/menu/sushi/dragon-roll.png"
   },
   {
     "id": "ebby-maki-chicharrn",
@@ -1269,7 +1269,7 @@
     "price": 229,
     "description": "Philadelphia empanizado. Camarón.  pepino",
     "category": "Sushi Especial",
-    "image": "/src/assets/images/menu/sushi/dragon-roll.png"
+    "image": "/assets/images/menu/sushi/dragon-roll.png"
   },
   {
     "id": "bombs-bumm",
@@ -1277,7 +1277,7 @@
     "price": 219,
     "description": "Dragón ball empanizada. Arrachera de cerdo.  Philadelphia",
     "category": "Sushi Especial",
-    "image": "/src/assets/images/menu/sushi/dragon-roll.png"
+    "image": "/assets/images/menu/sushi/dragon-roll.png"
   },
   {
     "id": "fujiyama-horneado",
@@ -1285,7 +1285,7 @@
     "price": 229,
     "description": "Pastelito arroz. Ensalada Tampico.  aguacate",
     "category": "Sushi Especial",
-    "image": "/src/assets/images/menu/sushi/dragon-roll.png"
+    "image": "/assets/images/menu/sushi/dragon-roll.png"
   },
   {
     "id": "gratinado-especial",
@@ -1293,7 +1293,7 @@
     "price": 198,
     "description": "Empanizado. Camarón.  aguacate",
     "category": "Sushi Especial",
-    "image": "/src/assets/images/menu/sushi/dragon-roll.png"
+    "image": "/assets/images/menu/sushi/dragon-roll.png"
   },
   {
     "id": "tepanyaki",

@@ -80,7 +80,7 @@ const main = () => {
 
     // Build image map from local files (recursive)
     const imageMap = {};
-    const imageDir = './src/assets/images';
+    const imageDir = './public/assets/images';
 
     // Helper to scan directory locally
     const scanImages = (dir) => {
@@ -92,8 +92,9 @@ const main = () => {
                 scanImages(fullPath);
             } else if (file.match(/\.(png|jpg|jpeg|webp)$/)) {
                 const nameWithoutExt = path.parse(file).name;
-                // Store relative path for frontend
-                imageMap[nameWithoutExt] = fullPath.replace('src/', '/src/');
+                // Store path relative to public folder (served directly by Vite)
+                const relativePath = fullPath.replace('./public', '');
+                imageMap[nameWithoutExt] = relativePath;
             }
         });
     };
