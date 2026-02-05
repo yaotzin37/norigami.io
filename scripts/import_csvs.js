@@ -70,74 +70,61 @@ const processFile = (filePath) => {
             item.price = parseFloat(record.Precio.replace('$', ''));
         }
 
-        // Image Mapping
-        const localImages = {
-            'takis-roll': '/src/assets/images/menu/sushi/dragon-roll.png', // Using dragon roll as placeholder for special
-            'dragon-ball-camarn': '/src/assets/images/menu/sushi/empanizado-roll.png',
-            'philadelphia-salmn': '/src/assets/images/menu/sushi/philadelphia-roll.png',
-            'imperiales': '/src/assets/images/menu/platillos-camaron/camarones-roca.png',
-            'calpico': '/src/assets/images/menu/bebidas/calpico.png',
-            'helado-frito': '/src/assets/images/menu/postres/helado-frito.png'
-        };
-
-        if (localImages[item.id]) {
-            item.image = localImages[item.id];
-        } else if (item.category === 'Sushi Especial') {
-            // Fallback for specials
-            item.image = '/src/assets/images/menu/sushi/dragon-roll.png';
-        }
-
         return item;
     });
 };
 
-// Build image map from local files (recursive)
-const imageMap = {};
-const imageDir = './src/assets/images';
+const main = () => {
+    const files = fs.readdirSync(importDir).filter(f => f.endsWith('.csv'));
+    let allItems = [];
 
-// Helper to scan directory locally
-const scanImages = (dir) => {
-    if (!fs.existsSync(dir)) return;
-    const files = fs.readdirSync(dir);
+    // Build image map from local files (recursive)
+    const imageMap = {};
+    const imageDir = './src/assets/images';
+
+    // Helper to scan directory locally
+    const scanImages = (dir) => {
+        if (!fs.existsSync(dir)) return;
+        const dirFiles = fs.readdirSync(dir);
+        dirFiles.forEach(file => {
+            const fullPath = path.join(dir, file);
+            if (fs.statSync(fullPath).isDirectory()) {
+                scanImages(fullPath);
+            } else if (file.match(/\.(png|jpg|jpeg|webp)$/)) {
+                const nameWithoutExt = path.parse(file).name;
+                // Store relative path for frontend
+                imageMap[nameWithoutExt] = fullPath.replace('src/', '/src/');
+            }
+        });
+    };
+    scanImages(imageDir);
+
     files.forEach(file => {
-        const fullPath = path.join(dir, file);
-        if (fs.statSync(fullPath).isDirectory()) {
-            scanImages(fullPath);
-        } else if (file.match(/\.(png|jpg|jpeg|webp)$/)) {
-            const nameWithoutExt = path.parse(file).name;
-            // Store relative path for frontend
-            imageMap[nameWithoutExt] = fullPath.replace('src/', '/src/');
+        console.log(`Processing ${file}...`);
+        try {
+            const items = processFile(path.join(importDir, file));
+
+            // Enrich items with images from map automatically
+            const enrichedItems = items.map(item => {
+                // 1. Exact match by ID
+                if (imageMap[item.id]) {
+                    item.image = imageMap[item.id];
+                }
+                // 2. Explicit overrides (for specials needing specific placeholders)
+                else if (item.category === 'Sushi Especial' && !item.image) {
+                    item.image = imageMap['dragon-roll'] || '';
+                }
+                return item;
+            });
+
+            allItems = allItems.concat(enrichedItems);
+        } catch (e) {
+            console.error(`Error processing ${file}:`, e);
         }
     });
-};
-scanImages(imageDir);
 
-files.forEach(file => {
-    console.log(`Processing ${file}...`);
-    try {
-        const items = processFile(path.join(importDir, file));
-
-        // Enrich items with images from map automatically
-        const enrichedItems = items.map(item => {
-            // 1. Exact match by ID
-            if (imageMap[item.id]) {
-                item.image = imageMap[item.id];
-            }
-            // 2. Explicit overrides (for specials needing specific placeholders)
-            else if (item.category === 'Sushi Especial' && !item.image) {
-                item.image = imageMap['dragon-roll'] || '';
-            }
-            return item;
-        });
-
-        allItems = allItems.concat(enrichedItems);
-    } catch (e) {
-        console.error(`Error processing ${file}:`, e);
-    }
-});
-
-fs.writeFileSync(outputFile, JSON.stringify(allItems, null, 2));
-console.log(`Generated ${allItems.length} items in ${outputFile}`);
+    fs.writeFileSync(outputFile, JSON.stringify(allItems, null, 2));
+    console.log(`Generated ${allItems.length} items in ${outputFile}`);
 };
 
 main();
