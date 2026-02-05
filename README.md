@@ -1,304 +1,300 @@
-# norigami.io
-proyecto norigami y tortas
-🍣 Norigami - Sitio Web de Restaurante Japonés
-Sitio web completo para el restaurante japonés Norigami, con menú interactivo, imágenes de platillos y diseño responsive.
+# 🍣 Norigami - Menú Digital
 
-🌟 Características
-✨ Diseño moderno y elegante.
-📱 Totalmente responsivo (móvil, tableta, escritorio)
-🍜 Menú interactivo con categorías
-🖼️ Imágenes de alta calidad para cada platillo
-🎯 Navegación suave entre secciones
-🏷️ Insignias de picante y vegetariano
-💅 Animaciones sutiles y transiciones
-♿ Accesible y compatible con WCAG AA
-🛠️ Tecnologías Utilizadas
-Next.js 16 - Framework de React con App Router
-TypeScript - Tipado estático
-Tailwind CSS 4 - Framework de CSS utilitario
-shadcn/ui - Componentes UI de alta calidad
-Lucide React - Iconos vectoriales
-📁 Estructura del Proyecto
+Plataforma web responsiva para visualizar y gestionar el menú de **Norigami**. Incluye imágenes optimizadas en WebP, validación automática de datos y soporte para múltiples dispositivos.
 
-norigami/
-├── public/
-│   └── images/
-│       ├── menu/           # Imágenes de platillos
-│       └── restaurant-hero.png
+## ✨ Características
+
+- 📱 **Responsivo**: Diseño mobile-first con breakpoints para tablet y desktop
+- 🖼️ **Imágenes optimizadas**: WebP con variantes de calidad (low/med/high) según ancho de viewport
+- 🔍 **Validación automática**: Tests Jest y script de validación para integridad de datos
+- 📦 **Menú estructurado**: JSON con categorías, precios y descripciones
+- 🎨 **Estilos modulares**: CSS reutilizable con variables personalizables
+- 🛠️ **Scripts útiles**: Importación de menús, compresión de imágenes, generación de WebP
+- 📚 **Bien documentado**: Guías en `docs/` para todas las características
+
+## 🚀 Quick Start
+
+### Requisitos
+- **Node.js** 14+ y npm
+
+### Instalación
+
+```bash
+# Clonar el repositorio
+git clone https://github.com/yaotzin37/norigami.io.git
+cd norigami.io
+
+# Instalar dependencias
+npm install
+
+# Ver comandos disponibles
+npm run
+
+# Validar estructura del menú
+npm run validate:menu
+
+# Ejecutar tests
+npm test
+```
+
+## 📋 Comandos Disponibles
+
+### Menú
+```bash
+npm run import:menu -- import_data          # Importar JSON desde carpeta
+npm run validate:menu                       # Validar estructura y archivos del menú
+```
+
+### Imágenes
+```bash
+npm run compress:images                     # Optimizar SVG y raster (backup automático)
+npm run generate:webp                       # Generar WebP desde originales
+npm run generate:webp:variants              # Generar variantes WebP (low/med/high)
+npm run attach:webp                         # Enlazar WebP en menu.json
+npm run attach:webp:variants                # Enlazar variantes en menu.json
+```
+
+### Testing
+```bash
+npm test                                    # Ejecutar toda la suite Jest
+npm test -- menu.test.js                    # Ejecutar solo tests de menú
+npm test -- --coverage                      # Ver cobertura de tests
+```
+
+## 📁 Estructura del Proyecto
+
+```
+norigami.io/
+├── README.md                          # Este archivo
+├── package.json                       # Dependencias y scripts
+├── jest.config.js                     # Configuración de tests
+│
 ├── src/
-│   ├── app/
-│   │   ├── globals.css     # Estilos globales
-│   │   ├── layout.tsx      # Layout principal
-│   │   └── page.tsx        # Página principal
-│   ├── components/
-│   │   ├── Navbar.tsx      # Navegación
-│   │   ├── Footer.tsx      # Footer
-│   │   ├── MenuItemCard.tsx  # Tarjeta de platillo
-│   │   └── MenuSection.tsx   # Sección de categoría
-│   └── lib/
-│       └── menu-data.ts    # Datos del menú
-└── README.md
-🚀 Instalación y Desarrollo Local
-Clonar el repositorio:
-intento
+│   ├── index.html                     # Página principal
+│   ├── 404.html                       # Página de error
+│   │
+│   ├── assets/
+│   │   ├── images/
+│   │   │   ├── menu/                  # Imágenes de platillos
+│   │   │   │   ├── yakimeshi/
+│   │   │   │   ├── sushi/
+│   │   │   │   ├── antojitos/
+│   │   │   │   ├── combos/
+│   │   │   │   └── platillos-calientes/
+│   │   │   ├── branding/              # Logo, favicon
+│   │   │   ├── icons/                 # Íconos personalizados
+│   │   │   └── hero/                  # Imágenes hero/banner
+│   │   ├── fonts/                     # Fuentes (Playfair, Poppins)
+│   │   └── illustrations/             # Gráficos personalizados
+│   │
+│   ├── styles/
+│   │   ├── main.css                   # Entrada principal
+│   │   ├── variables.css              # Colores, tipografía, etc.
+│   │   ├── responsive.css             # Media queries
+│   │   ├── animations.css             # Animaciones
+│   │   ├── components/                # Estilos de componentes
+│   │   │   ├── header.css
+│   │   │   ├── menu-card.css
+│   │   │   ├── cart.css
+│   │   │   ├── footer.css
+│   │   │   └── buttons.css
+│   │   └── sections/                  # Secciones específicas
+│   │       ├── hero.css
+│   │       ├── menu-section.css
+│   │       ├── filter-section.css
+│   │       └── info-section.css
+│   │
+│   ├── scripts/
+│   │   ├── main.js                    # Script principal
+│   │   ├── cart.js                    # Carrito
+│   │   ├── filter.js                  # Filtrado de categorías
+│   │   ├── search.js                  # Búsqueda
+│   │   ├── notifications.js           # Sistema de notificaciones
+│   │   ├── api/                       # Integraciones
+│   │   │   ├── whatsapp.js
+│   │   │   ├── payment.js
+│   │   │   └── app-sheet.js
+│   │   └── utils/
+│   │       ├── helpers.js
+│   │       └── validators.js
+│   │
+│   ├── data/
+│   │   ├── menu.json                  # Menú con imágenes y variantes
+│   │   ├── categories.json            # Categorías
+│   │   ├── extras.json                # Agregados/extras
+│   │   └── config.json                # Configuración del restaurante
+│   │
+│   ├── templates/
+│   │   ├── header.html                # Logo responsivo
+│   │   ├── menu-card.html             # Tarjeta de platillo
+│   │   ├── cart-sidebar.html          # Carrito
+│   │   └── footer.html                # Pie de página
+│   │
+│   └── pages/
+│       ├── about.html                 # Sobre nosotros
+│       ├── contact.html               # Contacto
+│       ├── gallery.html               # Galería
+│       └── events.html                # Eventos/charolas
+│
+├── scripts/
+│   ├── import-menu.js                 # Importar JSON → menu.json
+│   ├── compress-images.js             # SVGO + Sharp
+│   ├── generate-webp.js               # Generar .webp
+│   ├── generate-webp-variants.js      # Variantes (low/med/high)
+│   ├── attach-webp-to-menu.js         # Enlazar WebP
+│   ├── attach-webp-variants-to-menu.js # Enlazar variantes
+│   ├── validate-menu.js               # Validar estructura
+│   ├── deploy.sh                      # Deploy script
+│   └── README_IMPORT.md               # Guía de importación
+│
+├── tests/
+│   ├── unit/
+│   │   └── menu.test.js               # Tests de menu.json (58 tests)
+│   └── integration/
+│
+├── backup/
+│   ├── menu-backup-YYYY-MM-DD.json    # Backups automáticos
+│   ├── images-YYYY-MM-DD/             # Backup de imágenes
+│   └── webp-variants-YYYY-MM-DD/      # Backup de variantes
+│
+├── dist/                              # Build / producción (generado)
+│   ├── index.html
+│   ├── assets/
+│   └── favicon.ico
+│
+├── docs/
+│   ├── PROJECT_SETUP.md               # Guía de instalación
+│   ├── MENU_STRUCTURE.md              # Estructura de menu.json
+│   ├── RESPONSIVE_IMAGES.md           # Imágenes responsivas y WebP
+│   ├── API_INTEGRATION.md             # APIs (WhatsApp, Pagos, AppSheet)
+│   ├── DEPLOYMENT.md                  # Deploy
+│   ├── CONTRIBUTING.md                # Cómo contribuir
+│   └── SCREENSHOTS/                   # Capturas de pantalla
+│
+└── import_data/                       # Carpeta para importar menús
+    └── sample-import.json
+```
 
-git clone https://github.com/tu-usuario/norigami.git
-cd norigami
-Instalar dependencias:
-intento
+## 🖼️ Sistema de Imágenes
 
-bun install
-Iniciar servidor de desarrollo:
-intento
+Cada item en `menu.json` incluye:
 
-bun run dev
-Abrir en el navegador:
-
-http://localhost:3000
-📤 Despliegue en páginas de GitHub
-Opción 1: Usar acciones de GitHub (Recomendado)
-Crear el archivo :.github/workflows/deploy.yml
-yaml
-
-name: Deploy to GitHub Pages
-
-on:
-  push:
-    branches: [ main ]
-  workflow_dispatch:
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Bun
-        uses: oven-sh/setup-bun@v1
-        with:
-          bun-version: latest
-
-      - name: Install dependencies
-        run: bun install
-
-      - name: Build
-        run: bun run build
-        env:
-          NODE_ENV: production
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./out
-
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
-Configurar :next.config.js
-JavaScript
-
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: 'export',
-  basePath: '/norigami', // Reemplaza con tu nombre de repositorio
-  images: {
-    unoptimized: true,
-  },
-  trailingSlash: true,
-  assetPrefix: '/norigami', // Reemplaza con tu nombre de repositorio
-}
-
-export default nextConfig
-Activar páginas de GitHub en tu repositorio:
-Ve a Configuración → Páginas
-En "Construcción e implementación", selecciona "Acciones de GitHub"
-Hacer push de los cambios:
-intento
-
-git add .
-git commit -m "Add GitHub Pages deployment"
-git push origin main
-Opción 2: Manual con gh-pages
-Instalar gh-pages:
-intento
-
-bun add -D gh-pages
-Agregar script de deploy en :package.json
-JSON
-
+```json
 {
-  "scripts": {
-    "deploy": "bun run build && bunx gh-pages -d out -b gh-pages"
+  "id": "yakimeshi-1",
+  "name": "Yakimeshi de pollo",
+  "images": ["/src/assets/images/menu/yakimeshi/yakimeshi-1.svg"],
+  "imagesWebp": ["/src/assets/images/menu/yakimeshi/yakimeshi-1.webp"],
+  "imagesWebpVariants": {
+    "low": ["/src/assets/images/menu/yakimeshi/yakimeshi-1-low.webp"],    // 60% calidad, <480px
+    "med": ["/src/assets/images/menu/yakimeshi/yakimeshi-1-med.webp"],    // 80% calidad, <768px
+    "high": ["/src/assets/images/menu/yakimeshi/yakimeshi-1-high.webp"]   // 90% calidad, >768px
   }
 }
-Construir y desplegar:
-intento
+```
 
-bun run deploy
-Activar páginas de GitHub:
-Ve a Configuración → Páginas
-En "Fuente", selecciona ramagh-pages
-Opción 3: Desde la rama principal
-Configurar :next.config.js
-JavaScript
+Las plantillas usan `<picture>` para servir automáticamente según ancho de viewport:
 
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: 'export',
-  basePath: '/norigami', // Reemplaza con tu nombre de repositorio
-  images: {
-    unoptimized: true,
-  },
-  trailingSlash: true,
-  assetPrefix: '/norigami', // Reemplaza con tu nombre de repositorio
+```html
+<picture>
+  <source media="(max-width: 480px)" srcset="path-to-low.webp" type="image/webp">
+  <source media="(max-width: 768px)" srcset="path-to-med.webp" type="image/webp">
+  <source srcset="path-to-high.webp" type="image/webp">
+  <img src="path-to-original.svg" alt="Item">
+</picture>
+```
+
+Ver [docs/RESPONSIVE_IMAGES.md](docs/RESPONSIVE_IMAGES.md) para más detalles.
+
+## 📊 Validación y Tests
+
+La suite Jest valida automáticamente:
+- ✅ Campos requeridos (`id`, `name`, `price`, `category`)
+- ✅ Arrays de imágenes y variantes
+- ✅ Existencia de archivos en disco
+- ✅ Referencias válidas a categorías
+
+```bash
+npm test                    # Ejecutar todos (58 tests)
+npm run validate:menu       # Script rápido sin Jest
+```
+
+## 🔄 Flujo Típico de Importación
+
+1. Prepara JSON en `import_data/` (ver [scripts/README_IMPORT.md](scripts/README_IMPORT.md))
+2. Ejecuta: `npm run import:menu -- import_data`
+3. Genera WebP: `npm run generate:webp` y `npm run generate:webp:variants`
+4. Enlaza al menú: `npm run attach:webp` y `npm run attach:webp:variants`
+5. Valida: `npm test` y `npm run validate:menu`
+6. Commit y Push
+
+Los backups se crean automáticamente en `backup/`.
+
+## 📚 Documentación
+
+- [PROJECT_SETUP.md](docs/PROJECT_SETUP.md) — Instalación y configuración
+- [MENU_STRUCTURE.md](docs/MENU_STRUCTURE.md) — Estructura de `menu.json`
+- [RESPONSIVE_IMAGES.md](docs/RESPONSIVE_IMAGES.md) — Imágenes responsivas
+- [API_INTEGRATION.md](docs/API_INTEGRATION.md) — WhatsApp, Pagos, AppSheet
+- [DEPLOYMENT.md](docs/DEPLOYMENT.md) — Guía de deploy
+- [CONTRIBUTING.md](docs/CONTRIBUTING.md) — Cómo contribuir
+
+## 💡 Ejemplos de Uso
+
+### Renderizar menú (Vanilla JS)
+
+```javascript
+import menu from './src/data/menu.json';
+
+function renderMenuCard(item) {
+  const { id, name, price, images, imagesWebp, imagesWebpVariants } = item;
+  
+  return `
+    <article class="menu-card" data-id="${id}">
+      <picture class="menu-card__picture">
+        ${imagesWebpVariants?.low?.[0] ? `<source media="(max-width: 480px)" srcset="${imagesWebpVariants.low[0]}" type="image/webp">` : ''}
+        ${imagesWebpVariants?.med?.[0] ? `<source media="(max-width: 768px)" srcset="${imagesWebpVariants.med[0]}" type="image/webp">` : ''}
+        ${imagesWebp?.[0] ? `<source srcset="${imagesWebp[0]}" type="image/webp">` : ''}
+        <img src="${images[0]}" alt="${name}" loading="lazy">
+      </picture>
+      <h3>${name}</h3>
+      <p class="price">$${(price/100).toFixed(2)} MXN</p>
+    </article>
+  `;
 }
 
-export default nextConfig
-Construir el sitio:
-intento
+// Renderizar todos
+const menuHTML = menu.map(renderMenuCard).join('');
+document.getElementById('menu-container').innerHTML = menuHTML;
+```
 
-bun run build
-Mover el contenido de a la raíz del repositorio:out/
-intento
+### Filtrar por categoría
 
-mv out/* .
-mv out/.gitignore .
-rm -rf out
-Hacer commit y push:
-intento
+```javascript
+const sushi = menu.filter(item => item.category === 'sushi');
+```
 
-git add .
-git commit -m "Deploy to GitHub Pages"
-git push origin main
-Activar páginas de GitHub:
-Ve a Configuración → Páginas
-En "Fuente", seleccionaDeploy from a branch
-Seleccione rama y carpetamain/ (root)
-⚙️ Configuración Importante
-next.config.js
-Para GitHub Pages, necesitas esta configuración mínima:
+## 🎯 Variables CSS Personalizables
 
-JavaScript
+Edita `src/styles/variables.css`:
 
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: 'export',
-  images: {
-    unoptimized: true,
-  },
-  trailingSlash: true,
+```css
+:root {
+  --color-primary: #e63946;      /* Rojo (botones, títulos) */
+  --color-accent: #2a9d8f;       /* Verde (precios) */
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Poppins', sans-serif;
 }
+```
 
-export default nextConfig
-Nota: Si tu repositorio NO es el repositorio principal de tu cuenta, agrega y :basePathassetPrefix
+## 📄 Licencia
 
-JavaScript
+MIT (ver [LICENSE](LICENSE))
 
-basePath: '/norigami',
-assetPrefix: '/norigami',
-Importante sobre Imágenes
-GitHub Pages tiene limitaciones con la optimización de imágenes de Next.js, por eso usamos . Las imágenes ya están optimizadas manualmente en el proyecto.unoptimized: true
+## 👥 Contribuir
 
-📝 Personalización
-Cambiar Imágenes
-Las imágenes del menú están en . Para cambiar una imagen:public/images/menu/
+Ver [CONTRIBUTING.md](docs/CONTRIBUTING.md)
 
-Coloca tu nueva imagen en la carpeta
-Actualiza la ruta ensrc/lib/menu-data.ts
-Asegúrese de que el nombre del archivo coincida
-Editar el Menú
-El menú se define en . Puedes agregar, eliminar o modificar platillos:src/lib/menu-data.ts
+---
 
-mecanografiado
-
-{
-  id: "unique-id",
-  name: "Nombre del Platillo",
-  nameEn: "English Name",
-  description: "Descripción del platillo",
-  price: 15.00,
-  image: "/images/menu/your-image.png",
-  category: "sushi",
-  spicy: true,      // Opcional: badge de picante
-  vegetarian: true  // Opcional: badge de vegetariano
-}
-Cambiar colores
-Los colores están definidos en Tailwind CSS. Los colores principales son:
-
-Rojo principal: ,text-red-600bg-red-600
-Hover del rojo:hover:bg-red-700
-Fondo gris claro:bg-gray-50
-Texto oscuro:text-gray-900
-🎨 Secciones del Sitio
-1. Sección de héroes
-Logo del restaurante con caracteres japoneses
-Estadísticas (años de experiencia, calificación, platillos)
-Botones CTA (Ver Menú, Reservar Mesa)
-2. Navegación de Categorías
-Barra pegajosa que se muestra al hacer scroll
-Categorías: Entradas, Sushi, Platos Principales, Postres, Bebidas
-Indicador de categoría activa
-3. Menú Completo
-Tarjetas de platillos con:
-Imagen de alta calidad
-Nombre en español e inglés
-Descripción detallada
-Precio
-Insignias de picante y vegetariano
-4. Sección "Nosotros"
-Historia del restaurante
-Valores y compromiso
-Estadísticas visuales
-5. Sección "Contacto"
-Dirección
-Teléfono
-Correo electrónico
-Botón de reserva
-6. Pie de página
-Información del restaurante
-Horarios de apertura
-Redes sociales
-Derechos de autor
-🌐 Vista previa
-El sitio web está optimizado para verse bien en todos los dispositivos:
-
-Móvil (< 768px): Menú hamburguesa, columnas simples
-Tablet (768px - 1024px): Grid de 2 columnas, navegación horizontal
-Escritorio (> 1024px): Grid de 3-4 columnas, navegación completa
-📱 Capturas de pantalla
-Sección héroe con imagen del restaurante
-Grid de platillos del menú
-Tarjetas de platillos con efectos de desplazamiento
-Sección de contacto
-🤝 Contribución
-Si deseas mejorar el sitio web:
-
-Fork el repositorio
-Crea una rama para tu característica ( )git checkout -b feature/AmazingFeature
-Commit tus cambios ( )git commit -m 'Add some AmazingFeature'
-Empujar a la rama ( )git push origin feature/AmazingFeature
-Abre una solicitud de extracción
-📄 Licencia
-Este proyecto está bajo la Licencia MIT.
-
-👨‍🍳 Sobre Norigami
-Norigami es un restaurante japonés auténtico que combina tradición y modernidad. Nuestros chefs, formados en las mejores escuelas de cocina de Japón, preparan cada platillo con pasión y dedicación, utilizando ingredientes frescos de la más alta calidad.
-
-Desarrollado con ❤️ utilizando Next.js, Tailwind CSS y shadcn/ui
+**¿Preguntas?** Abre un issue en GitHub o consulta la documentación en `docs/`.
