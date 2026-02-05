@@ -5,6 +5,12 @@
   "scripts": {
     "start": "echo \"Start script not implemented\"",
     "build": "echo \"Build script not implemented\"",
-    "import:menu": "node scripts/import-menu.js"
+    "import:menu": "node scripts/import-menu.js",
+    "compress:images": "node scripts/compress-images.js"
+  },
+  "devDependencies": {
+    "glob": "^8.1.0",
+    "sharp": "^0.32.0",
+    "svgo": "^3.0.0"
   }
 }
