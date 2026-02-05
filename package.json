@@ -1,0 +1,10 @@
+{
+  "name": "norigami-menu-digital",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "echo \"Start script not implemented\"",
+    "build": "echo \"Build script not implemented\"",
+    "import:menu": "node scripts/import-menu.js"
+  }
+}
