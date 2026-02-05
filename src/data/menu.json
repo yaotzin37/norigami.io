@@ -7,7 +7,21 @@
     "description": "Arroz salteado con pollo, verduras y salsa teriyaki.",
     "images": [
       "/src/assets/images/menu/yakimeshi/yakimeshi-1.svg"
-    ]
+    ],
+    "imagesWebp": [
+      "/src/assets/images/menu/yakimeshi/yakimeshi-1.webp"
+    ],
+    "imagesWebpVariants": {
+      "low": [
+        "/src/assets/images/menu/yakimeshi/yakimeshi-1-low.webp"
+      ],
+      "med": [
+        "/src/assets/images/menu/yakimeshi/yakimeshi-1-med.webp"
+      ],
+      "high": [
+        "/src/assets/images/menu/yakimeshi/yakimeshi-1-high.webp"
+      ]
+    }
   },
   {
     "id": "sushi-salmon-1",
@@ -17,7 +31,21 @@
     "description": "Nigiri con salmón fresco.",
     "images": [
       "/src/assets/images/menu/sushi/salmon-nigiri.svg"
-    ]
+    ],
+    "imagesWebp": [
+      "/src/assets/images/menu/sushi/salmon-nigiri.webp"
+    ],
+    "imagesWebpVariants": {
+      "low": [
+        "/src/assets/images/menu/sushi/salmon-nigiri-low.webp"
+      ],
+      "med": [
+        "/src/assets/images/menu/sushi/salmon-nigiri-med.webp"
+      ],
+      "high": [
+        "/src/assets/images/menu/sushi/salmon-nigiri-high.webp"
+      ]
+    }
   },
   {
     "id": "antojito-gyoza",
@@ -27,7 +55,21 @@
     "description": "6 piezas con salsa especial.",
     "images": [
       "/src/assets/images/menu/antojitos/gyoza.svg"
-    ]
+    ],
+    "imagesWebp": [
+      "/src/assets/images/menu/antojitos/gyoza.webp"
+    ],
+    "imagesWebpVariants": {
+      "low": [
+        "/src/assets/images/menu/antojitos/gyoza-low.webp"
+      ],
+      "med": [
+        "/src/assets/images/menu/antojitos/gyoza-med.webp"
+      ],
+      "high": [
+        "/src/assets/images/menu/antojitos/gyoza-high.webp"
+      ]
+    }
   },
   {
     "id": "combo-ramen",
@@ -37,7 +79,21 @@
     "description": "Ramen tradicional más gyozas.",
     "images": [
       "/src/assets/images/menu/combos/ramen-combo.svg"
-    ]
+    ],
+    "imagesWebp": [
+      "/src/assets/images/menu/combos/ramen-combo.webp"
+    ],
+    "imagesWebpVariants": {
+      "low": [
+        "/src/assets/images/menu/combos/ramen-combo-low.webp"
+      ],
+      "med": [
+        "/src/assets/images/menu/combos/ramen-combo-med.webp"
+      ],
+      "high": [
+        "/src/assets/images/menu/combos/ramen-combo-high.webp"
+      ]
+    }
   },
   {
     "id": "platillo-caliente-1",
@@ -47,7 +103,21 @@
     "description": "Sopa miso tradicional.",
     "images": [
       "/src/assets/images/menu/platillos-calientes/miso.svg"
-    ]
+    ],
+    "imagesWebp": [
+      "/src/assets/images/menu/platillos-calientes/miso.webp"
+    ],
+    "imagesWebpVariants": {
+      "low": [
+        "/src/assets/images/menu/platillos-calientes/miso-low.webp"
+      ],
+      "med": [
+        "/src/assets/images/menu/platillos-calientes/miso-med.webp"
+      ],
+      "high": [
+        "/src/assets/images/menu/platillos-calientes/miso-high.webp"
+      ]
+    }
   },
   {
     "id": "test-1",
@@ -57,7 +127,21 @@
     "description": "Ejemplo de yakimeshi para importación.",
     "images": [
       "/src/assets/images/menu/yakimeshi/yakimeshi-1.svg"
-    ]
+    ],
+    "imagesWebp": [
+      "/src/assets/images/menu/yakimeshi/yakimeshi-1.webp"
+    ],
+    "imagesWebpVariants": {
+      "low": [
+        "/src/assets/images/menu/yakimeshi/yakimeshi-1-low.webp"
+      ],
+      "med": [
+        "/src/assets/images/menu/yakimeshi/yakimeshi-1-med.webp"
+      ],
+      "high": [
+        "/src/assets/images/menu/yakimeshi/yakimeshi-1-high.webp"
+      ]
+    }
   },
   {
     "id": "test-2",
@@ -67,6 +151,20 @@
     "description": "Ejemplo de nigiri para importación.",
     "images": [
       "/src/assets/images/menu/sushi/salmon-nigiri.svg"
-    ]
+    ],
+    "imagesWebp": [
+      "/src/assets/images/menu/sushi/salmon-nigiri.webp"
+    ],
+    "imagesWebpVariants": {
+      "low": [
+        "/src/assets/images/menu/sushi/salmon-nigiri-low.webp"
+      ],
+      "med": [
+        "/src/assets/images/menu/sushi/salmon-nigiri-med.webp"
+      ],
+      "high": [
+        "/src/assets/images/menu/sushi/salmon-nigiri-high.webp"
+      ]
+    }
   }
 ]
