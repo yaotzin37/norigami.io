@@ -8,7 +8,9 @@
     "import:menu": "node scripts/import-menu.js",
     "compress:images": "node scripts/compress-images.js",
     "generate:webp": "node scripts/generate-webp.js",
-    "attach:webp": "node scripts/attach-webp-to-menu.js"
+    "attach:webp": "node scripts/attach-webp-to-menu.js",
+    "generate:webp:variants": "node scripts/generate-webp-variants.js",
+    "attach:webp:variants": "node scripts/attach-webp-variants-to-menu.js"
   },
   "devDependencies": {
     "glob": "^8.1.0",
