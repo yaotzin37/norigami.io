@@ -1,0 +1,18 @@
+[
+  {
+    "id": "test-1",
+    "name": "Temp Yakimeshi",
+    "category": "yakimeshi",
+    "price": 129.0,
+    "description": "Ejemplo de yakimeshi para importación.",
+    "image": "/src/assets/images/menu/yakimeshi/yakimeshi-1.jpg"
+  },
+  {
+    "id": "test-2",
+    "name": "Temp Nigiri",
+    "category": "sushi",
+    "price": 49.0,
+    "description": "Ejemplo de nigiri para importación.",
+    "image": "/src/assets/images/menu/sushi/salmon-nigiri.jpg"
+  }
+]

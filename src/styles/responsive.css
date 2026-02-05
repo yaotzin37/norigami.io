@@ -1,0 +1,4 @@
+/* Media queries */
+@media (max-width: 768px) {
+  .menu-card { padding: .5rem }
+}
