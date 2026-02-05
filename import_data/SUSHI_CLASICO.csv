@@ -1,0 +1,91 @@
+Categoria,Cubierta,Proteina,Precio
+Sushi Clásico,Empanizado,Camarón,109
+Sushi Clásico,Empanizado,Salmón,139
+Sushi Clásico,Empanizado,Atún,139
+Sushi Clásico,Empanizado,Surimi,109
+Sushi Clásico,Empanizado,Cangrejo,109
+Sushi Clásico,Empanizado,Res,109
+Sushi Clásico,Empanizado,Pollo,99
+Sushi Clásico,Dragon Ball,Camarón,109
+Sushi Clásico,Dragon Ball,Salmón,139
+Sushi Clásico,Dragon Ball,Atún,139
+Sushi Clásico,Dragon Ball,Surimi,109
+Sushi Clásico,Dragon Ball,Cangrejo,109
+Sushi Clásico,Dragon Ball,Res,109
+Sushi Clásico,Dragon Ball,Pollo,99
+Sushi Clásico,Philadelphia,Camarón,119
+Sushi Clásico,Philadelphia,Salmón,149
+Sushi Clásico,Philadelphia,Atún,149
+Sushi Clásico,Philadelphia,Surimi,119
+Sushi Clásico,Philadelphia,Cangrejo,119
+Sushi Clásico,Philadelphia,Res,119
+Sushi Clásico,Philadelphia,Pollo,109
+Sushi Clásico,Philadelphia Empanizado,Camarón,139
+Sushi Clásico,Philadelphia Empanizado,Salmón,159
+Sushi Clásico,Philadelphia Empanizado,Atún,159
+Sushi Clásico,Philadelphia Empanizado,Surimi,139
+Sushi Clásico,Philadelphia Empanizado,Cangrejo,139
+Sushi Clásico,Philadelphia Empanizado,Res,139
+Sushi Clásico,Philadelphia Empanizado,Pollo,119
+Sushi Clásico,Masago,Camarón,159
+Sushi Clásico,Masago,Salmón,165
+Sushi Clásico,Masago,Atún,165
+Sushi Clásico,Masago,Surimi,159
+Sushi Clásico,Masago,Cangrejo,159
+Sushi Clásico,Masago,Res,159
+Sushi Clásico,Masago,Pollo,139
+Sushi Clásico,Alga Marina,Camarón,99
+Sushi Clásico,Alga Marina,Salmón,139
+Sushi Clásico,Alga Marina,Atún,139
+Sushi Clásico,Alga Marina,Surimi,99
+Sushi Clásico,Alga Marina,Cangrejo,99
+Sushi Clásico,Alga Marina,Res,99
+Sushi Clásico,Alga Marina,Pollo,95
+Sushi Clásico,Arroz y Ajonjolí,Camarón,99
+Sushi Clásico,Arroz y Ajonjolí,Salmón,139
+Sushi Clásico,Arroz y Ajonjolí,Atún,139
+Sushi Clásico,Arroz y Ajonjolí,Surimi,99
+Sushi Clásico,Arroz y Ajonjolí,Cangrejo,99
+Sushi Clásico,Arroz y Ajonjolí,Res,99
+Sushi Clásico,Arroz y Ajonjolí,Pollo,95
+Sushi Clásico,Tempura,Camarón,99
+Sushi Clásico,Tempura,Salmón,139
+Sushi Clásico,Tempura,Atún,139
+Sushi Clásico,Tempura,Surimi,99
+Sushi Clásico,Tempura,Cangrejo,99
+Sushi Clásico,Tempura,Res,99
+Sushi Clásico,Tempura,Pollo,95
+Sushi Clásico,Capeado,Camarón,99
+Sushi Clásico,Capeado,Salmón,139
+Sushi Clásico,Capeado,Atún,139
+Sushi Clásico,Capeado,Surimi,99
+Sushi Clásico,Capeado,Cangrejo,99
+Sushi Clásico,Capeado,Res,99
+Sushi Clásico,Capeado,Pollo,95
+Sushi Clásico,Aguacate y Ajonjolí,Camarón,119
+Sushi Clásico,Aguacate y Ajonjolí,Salmón,149
+Sushi Clásico,Aguacate y Ajonjolí,Atún,149
+Sushi Clásico,Aguacate y Ajonjolí,Surimi,119
+Sushi Clásico,Aguacate y Ajonjolí,Cangrejo,119
+Sushi Clásico,Aguacate y Ajonjolí,Res,119
+Sushi Clásico,Aguacate y Ajonjolí,Pollo,109
+Sushi Clásico,Camarón,Camarón,139
+Sushi Clásico,Camarón,Salmón,159
+Sushi Clásico,Camarón,Atún,159
+Sushi Clásico,Camarón,Surimi,139
+Sushi Clásico,Camarón,Cangrejo,139
+Sushi Clásico,Camarón,Res,139
+Sushi Clásico,Camarón,Pollo,119
+Sushi Clásico,Salmón,Camarón,159
+Sushi Clásico,Salmón,Salmón,169
+Sushi Clásico,Salmón,Atún,169
+Sushi Clásico,Salmón,Surimi,159
+Sushi Clásico,Salmón,Cangrejo,159
+Sushi Clásico,Salmón,Res,159
+Sushi Clásico,Salmón,Pollo,148
+Sushi Clásico,Volcán Fuji,Camarón,159
+Sushi Clásico,Volcán Fuji,Salmón,169
+Sushi Clásico,Volcán Fuji,Atún,169
+Sushi Clásico,Volcán Fuji,Surimi,159
+Sushi Clásico,Volcán Fuji,Cangrejo,159
+Sushi Clásico,Volcán Fuji,Res,159

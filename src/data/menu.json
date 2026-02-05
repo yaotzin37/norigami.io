@@ -1,170 +1,1810 @@
 [
   {
-    "id": "yakimeshi-1",
-    "name": "Yakimeshi de pollo",
-    "category": "yakimeshi",
-    "price": 12900,
-    "description": "Arroz salteado con pollo, verduras y salsa teriyaki.",
-    "images": [
-      "/src/assets/images/menu/yakimeshi/yakimeshi-1.svg"
-    ],
-    "imagesWebp": [
-      "/src/assets/images/menu/yakimeshi/yakimeshi-1.webp"
-    ],
-    "imagesWebpVariants": {
-      "low": [
-        "/src/assets/images/menu/yakimeshi/yakimeshi-1-low.webp"
-      ],
-      "med": [
-        "/src/assets/images/menu/yakimeshi/yakimeshi-1-med.webp"
-      ],
-      "high": [
-        "/src/assets/images/menu/yakimeshi/yakimeshi-1-high.webp"
-      ]
-    }
+    "id": "agua-fresca-natural",
+    "name": "Agua Fresca Natural",
+    "price": 38,
+    "description": "",
+    "category": "Bebidas",
+    "image": ""
   },
   {
-    "id": "sushi-salmon-1",
-    "name": "Nigiri de salmón",
-    "category": "sushi",
-    "price": 4900,
-    "description": "Nigiri con salmón fresco.",
-    "images": [
-      "/src/assets/images/menu/sushi/salmon-nigiri.svg"
-    ],
-    "imagesWebp": [
-      "/src/assets/images/menu/sushi/salmon-nigiri.webp"
-    ],
-    "imagesWebpVariants": {
-      "low": [
-        "/src/assets/images/menu/sushi/salmon-nigiri-low.webp"
-      ],
-      "med": [
-        "/src/assets/images/menu/sushi/salmon-nigiri-med.webp"
-      ],
-      "high": [
-        "/src/assets/images/menu/sushi/salmon-nigiri-high.webp"
-      ]
-    }
+    "id": "calpico",
+    "name": "Calpico",
+    "price": 39,
+    "description": "",
+    "category": "Bebidas",
+    "image": ""
   },
   {
-    "id": "antojito-gyoza",
-    "name": "Gyozas",
-    "category": "antojitos",
-    "price": 7900,
-    "description": "6 piezas con salsa especial.",
-    "images": [
-      "/src/assets/images/menu/antojitos/gyoza.svg"
-    ],
-    "imagesWebp": [
-      "/src/assets/images/menu/antojitos/gyoza.webp"
-    ],
-    "imagesWebpVariants": {
-      "low": [
-        "/src/assets/images/menu/antojitos/gyoza-low.webp"
-      ],
-      "med": [
-        "/src/assets/images/menu/antojitos/gyoza-med.webp"
-      ],
-      "high": [
-        "/src/assets/images/menu/antojitos/gyoza-high.webp"
-      ]
-    }
+    "id": "t-helado-jazmn",
+    "name": "Té Helado Jazmín",
+    "price": 39,
+    "description": "",
+    "category": "Bebidas",
+    "image": ""
   },
   {
-    "id": "combo-ramen",
-    "name": "Combo Ramen + Gyozas",
-    "category": "combos",
-    "price": 19900,
-    "description": "Ramen tradicional más gyozas.",
-    "images": [
-      "/src/assets/images/menu/combos/ramen-combo.svg"
-    ],
-    "imagesWebp": [
-      "/src/assets/images/menu/combos/ramen-combo.webp"
-    ],
-    "imagesWebpVariants": {
-      "low": [
-        "/src/assets/images/menu/combos/ramen-combo-low.webp"
-      ],
-      "med": [
-        "/src/assets/images/menu/combos/ramen-combo-med.webp"
-      ],
-      "high": [
-        "/src/assets/images/menu/combos/ramen-combo-high.webp"
-      ]
-    }
+    "id": "coca-cola",
+    "name": "Coca-Cola",
+    "price": 39,
+    "description": "",
+    "category": "Bebidas",
+    "image": ""
   },
   {
-    "id": "platillo-caliente-1",
-    "name": "Sopa miso caliente",
-    "category": "platillos-calientes",
-    "price": 3900,
-    "description": "Sopa miso tradicional.",
-    "images": [
-      "/src/assets/images/menu/platillos-calientes/miso.svg"
-    ],
-    "imagesWebp": [
-      "/src/assets/images/menu/platillos-calientes/miso.webp"
-    ],
-    "imagesWebpVariants": {
-      "low": [
-        "/src/assets/images/menu/platillos-calientes/miso-low.webp"
-      ],
-      "med": [
-        "/src/assets/images/menu/platillos-calientes/miso-med.webp"
-      ],
-      "high": [
-        "/src/assets/images/menu/platillos-calientes/miso-high.webp"
-      ]
-    }
+    "id": "cerveza-0-alcohol",
+    "name": "Cerveza 0% Alcohol",
+    "price": 45,
+    "description": "",
+    "category": "Bebidas",
+    "image": ""
   },
   {
-    "id": "test-1",
-    "name": "Temp Yakimeshi",
-    "category": "yakimeshi",
-    "price": 12900,
-    "description": "Ejemplo de yakimeshi para importación.",
-    "images": [
-      "/src/assets/images/menu/yakimeshi/yakimeshi-1.svg"
-    ],
-    "imagesWebp": [
-      "/src/assets/images/menu/yakimeshi/yakimeshi-1.webp"
-    ],
-    "imagesWebpVariants": {
-      "low": [
-        "/src/assets/images/menu/yakimeshi/yakimeshi-1-low.webp"
-      ],
-      "med": [
-        "/src/assets/images/menu/yakimeshi/yakimeshi-1-med.webp"
-      ],
-      "high": [
-        "/src/assets/images/menu/yakimeshi/yakimeshi-1-high.webp"
-      ]
-    }
+    "id": "limonadas-exticas",
+    "name": "Limonadas Exóticas",
+    "price": 0,
+    "description": "",
+    "category": "Bebidas",
+    "image": ""
   },
   {
-    "id": "test-2",
-    "name": "Temp Nigiri",
-    "category": "sushi",
-    "price": 4900,
-    "description": "Ejemplo de nigiri para importación.",
-    "images": [
-      "/src/assets/images/menu/sushi/salmon-nigiri.svg"
-    ],
-    "imagesWebp": [
-      "/src/assets/images/menu/sushi/salmon-nigiri.webp"
-    ],
-    "imagesWebpVariants": {
-      "low": [
-        "/src/assets/images/menu/sushi/salmon-nigiri-low.webp"
-      ],
-      "med": [
-        "/src/assets/images/menu/sushi/salmon-nigiri-med.webp"
-      ],
-      "high": [
-        "/src/assets/images/menu/sushi/salmon-nigiri-high.webp"
-      ]
-    }
+    "id": "bebida-casa-mineral",
+    "name": "Bebida Casa Mineral",
+    "price": 68,
+    "description": "",
+    "category": "Bebidas",
+    "image": ""
+  },
+  {
+    "id": "bebida-casa-natural",
+    "name": "Bebida Casa Natural",
+    "price": 65,
+    "description": "",
+    "category": "Bebidas",
+    "image": ""
+  },
+  {
+    "id": "combo-1",
+    "name": "Combo #1",
+    "price": 179,
+    "description": "",
+    "category": "Combos Sushi",
+    "image": ""
+  },
+  {
+    "id": "combo-2",
+    "name": "Combo #2",
+    "price": 179,
+    "description": "",
+    "category": "Combos Sushi",
+    "image": ""
+  },
+  {
+    "id": "combo-3",
+    "name": "Combo #3",
+    "price": 179,
+    "description": "",
+    "category": "Combos Sushi",
+    "image": ""
+  },
+  {
+    "id": "combo-4",
+    "name": "Combo #4",
+    "price": 179,
+    "description": "",
+    "category": "Combos Sushi",
+    "image": ""
+  },
+  {
+    "id": "indomable-1",
+    "name": "Indomable #1",
+    "price": 169,
+    "description": "",
+    "category": "Combos Hamburguesa",
+    "image": ""
+  },
+  {
+    "id": "renegado-2",
+    "name": "Renegado #2",
+    "price": 189,
+    "description": "",
+    "category": "Combos Hamburguesa",
+    "image": ""
+  },
+  {
+    "id": "indomable-3",
+    "name": "Indomable #3",
+    "price": 199,
+    "description": "",
+    "category": "Combos Hamburguesa",
+    "image": ""
+  },
+  {
+    "id": "inevitable-4",
+    "name": "Inevitable #4",
+    "price": 249,
+    "description": "",
+    "category": "Combos Hamburguesa",
+    "image": ""
+  },
+  {
+    "id": "nombre",
+    "name": "Nombre",
+    "price": 0,
+    "description": "",
+    "category": "General",
+    "image": ""
+  },
+  {
+    "id": "direccion",
+    "name": "Direccion",
+    "price": 0,
+    "description": "",
+    "category": "General",
+    "image": ""
+  },
+  {
+    "id": "cp",
+    "name": "CP",
+    "price": 0,
+    "description": "",
+    "category": "General",
+    "image": ""
+  },
+  {
+    "id": "telefono",
+    "name": "Telefono",
+    "price": 0,
+    "description": "",
+    "category": "General",
+    "image": ""
+  },
+  {
+    "id": "horario-sabado",
+    "name": "Horario Sabado",
+    "price": 0,
+    "description": "",
+    "category": "General",
+    "image": ""
+  },
+  {
+    "id": "especialidad",
+    "name": "Especialidad",
+    "price": 0,
+    "description": "",
+    "category": "General",
+    "image": ""
+  },
+  {
+    "id": "anos",
+    "name": "Anos",
+    "price": 0,
+    "description": "",
+    "category": "General",
+    "image": ""
+  },
+  {
+    "id": "norigami",
+    "name": "Norigami",
+    "price": 225,
+    "description": "",
+    "category": "Platillos Camarón",
+    "image": ""
+  },
+  {
+    "id": "a-la-philadelphia",
+    "name": "A la Philadelphia",
+    "price": 225,
+    "description": "",
+    "category": "Platillos Camarón",
+    "image": ""
+  },
+  {
+    "id": "al-coco",
+    "name": "Al Coco",
+    "price": 219,
+    "description": "",
+    "category": "Platillos Camarón",
+    "image": ""
+  },
+  {
+    "id": "imperiales",
+    "name": "Imperiales",
+    "price": 219,
+    "description": "",
+    "category": "Platillos Camarón",
+    "image": ""
+  },
+  {
+    "id": "empanizadostempura",
+    "name": "Empanizados/Tempura",
+    "price": 199,
+    "description": "",
+    "category": "Platillos Camarón",
+    "image": ""
+  },
+  {
+    "id": "spaghetti-oriental",
+    "name": "Spaghetti Oriental",
+    "price": null,
+    "description": "",
+    "category": "Platillos Camarón",
+    "image": ""
+  },
+  {
+    "id": "spaghetti-oriental",
+    "name": "Spaghetti Oriental",
+    "price": null,
+    "description": "",
+    "category": "Platillos Camarón",
+    "image": ""
+  },
+  {
+    "id": "spaghetti-oriental",
+    "name": "Spaghetti Oriental",
+    "price": null,
+    "description": "",
+    "category": "Platillos Camarón",
+    "image": ""
+  },
+  {
+    "id": "spaghetti-oriental",
+    "name": "Spaghetti Oriental",
+    "price": null,
+    "description": "",
+    "category": "Platillos Camarón",
+    "image": ""
+  },
+  {
+    "id": "spaghetti-oriental",
+    "name": "Spaghetti Oriental",
+    "price": null,
+    "description": "",
+    "category": "Platillos Camarón",
+    "image": ""
+  },
+  {
+    "id": "rollitos-primavera",
+    "name": "Rollitos Primavera",
+    "price": 89,
+    "description": "",
+    "category": "Entradas",
+    "image": ""
+  },
+  {
+    "id": "rollitos-primavera",
+    "name": "Rollitos Primavera",
+    "price": 32,
+    "description": "",
+    "category": "Entradas",
+    "image": ""
+  },
+  {
+    "id": "rollitos-primavera",
+    "name": "Rollitos Primavera",
+    "price": 93,
+    "description": "",
+    "category": "Entradas",
+    "image": ""
+  },
+  {
+    "id": "edamames",
+    "name": "Edamames",
+    "price": 69,
+    "description": "",
+    "category": "Entradas",
+    "image": ""
+  },
+  {
+    "id": "kushiyaki",
+    "name": "Kushiyaki",
+    "price": 89,
+    "description": "",
+    "category": "Entradas",
+    "image": ""
+  },
+  {
+    "id": "kushiyaki",
+    "name": "Kushiyaki",
+    "price": 32,
+    "description": "",
+    "category": "Entradas",
+    "image": ""
+  },
+  {
+    "id": "kushiyaki",
+    "name": "Kushiyaki",
+    "price": 93,
+    "description": "",
+    "category": "Entradas",
+    "image": ""
+  },
+  {
+    "id": "gyoza-cerdo",
+    "name": "Gyoza Cerdo",
+    "price": 98,
+    "description": "",
+    "category": "Entradas",
+    "image": ""
+  },
+  {
+    "id": "gyoza-camarn",
+    "name": "Gyoza Camarón",
+    "price": 109,
+    "description": "",
+    "category": "Entradas",
+    "image": ""
+  },
+  {
+    "id": "enoki-ebby",
+    "name": "Enoki Ebby",
+    "price": 126,
+    "description": "",
+    "category": "Entradas",
+    "image": ""
+  },
+  {
+    "id": "mini-dragons",
+    "name": "Mini Dragons",
+    "price": 105,
+    "description": "",
+    "category": "Entradas",
+    "image": ""
+  },
+  {
+    "id": "aguacate-o-philadelphia-orden",
+    "name": "Aguacate o Philadelphia (orden)",
+    "price": 29,
+    "description": "",
+    "category": "Extras",
+    "image": ""
+  },
+  {
+    "id": "aderezossalsas-extras",
+    "name": "Aderezos/Salsas Extras",
+    "price": 19,
+    "description": "",
+    "category": "Extras",
+    "image": ""
+  },
+  {
+    "id": "ensalada-tampico",
+    "name": "Ensalada Tampico",
+    "price": 39,
+    "description": "",
+    "category": "Extras",
+    "image": ""
+  },
+  {
+    "id": "ensalada-69",
+    "name": "Ensalada 69",
+    "price": 55,
+    "description": "",
+    "category": "Extras",
+    "image": ""
+  },
+  {
+    "id": "gratinar-sushi",
+    "name": "Gratinar Sushi",
+    "price": 48,
+    "description": "",
+    "category": "Extras",
+    "image": ""
+  },
+  {
+    "id": "tostadas-secas",
+    "name": "Tostadas Secas",
+    "price": 19,
+    "description": "",
+    "category": "Extras",
+    "image": ""
+  },
+  {
+    "id": "tostadas-hojaldre",
+    "name": "Tostadas Hojaldre",
+    "price": 25,
+    "description": "",
+    "category": "Extras",
+    "image": ""
+  },
+  {
+    "id": "jengibrewasabi-extra",
+    "name": "Jengibre/Wasabi Extra",
+    "price": 19,
+    "description": "",
+    "category": "Extras",
+    "image": ""
+  },
+  {
+    "id": "capa-extra-philadelphia",
+    "name": "Capa Extra Philadelphia",
+    "price": 45,
+    "description": "",
+    "category": "Extras",
+    "image": ""
+  },
+  {
+    "id": "2-tortas-2-tacos",
+    "name": "2 Tortas + 2 Tacos",
+    "price": 149,
+    "description": "",
+    "category": "Paquetes",
+    "image": ""
+  },
+  {
+    "id": "1-torta-2-tacos-agua",
+    "name": "1 Torta + 2 Tacos + Agua",
+    "price": 99,
+    "description": "",
+    "category": "Paquetes",
+    "image": ""
+  },
+  {
+    "id": "familiar",
+    "name": "Familiar",
+    "price": 480,
+    "description": "",
+    "category": "Paquetes",
+    "image": ""
+  },
+  {
+    "id": "amigos",
+    "name": "Amigos",
+    "price": 1050,
+    "description": "",
+    "category": "Paquetes",
+    "image": ""
+  },
+  {
+    "id": "rosca-sushi",
+    "name": "Rosca Sushi",
+    "price": 330,
+    "description": "",
+    "category": "Paquetes",
+    "image": ""
+  },
+  {
+    "id": "helado-frito",
+    "name": "Helado Frito",
+    "price": 89,
+    "description": "",
+    "category": "Postres",
+    "image": ""
+  },
+  {
+    "id": "pltanos-flameados",
+    "name": "Plátanos Flameados",
+    "price": 149,
+    "description": "",
+    "category": "Postres",
+    "image": ""
+  },
+  {
+    "id": "4-bolas-de-helado",
+    "name": "4 Bolas de Helado",
+    "price": 55,
+    "description": "",
+    "category": "Postres",
+    "image": ""
+  },
+  {
+    "id": "ceviche-tropical",
+    "name": "Ceviche Tropical",
+    "price": 209,
+    "description": "",
+    "category": "Sopas",
+    "image": ""
+  },
+  {
+    "id": "ceviche-negro",
+    "name": "Ceviche Negro",
+    "price": 199,
+    "description": "",
+    "category": "Sopas",
+    "image": ""
+  },
+  {
+    "id": "sopa-shiitake",
+    "name": "Sopa Shiitake",
+    "price": 189,
+    "description": "",
+    "category": "Sopas",
+    "image": ""
+  },
+  {
+    "id": "sopa-udon",
+    "name": "Sopa Udon",
+    "price": 189,
+    "description": "",
+    "category": "Sopas",
+    "image": ""
+  },
+  {
+    "id": "empanizado-camarn",
+    "name": "Empanizado de Camarón",
+    "price": 109,
+    "description": "Estilo Empanizado con Camarón",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "empanizado-salmn",
+    "name": "Empanizado de Salmón",
+    "price": 139,
+    "description": "Estilo Empanizado con Salmón",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "empanizado-atn",
+    "name": "Empanizado de Atún",
+    "price": 139,
+    "description": "Estilo Empanizado con Atún",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "empanizado-surimi",
+    "name": "Empanizado de Surimi",
+    "price": 109,
+    "description": "Estilo Empanizado con Surimi",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "empanizado-cangrejo",
+    "name": "Empanizado de Cangrejo",
+    "price": 109,
+    "description": "Estilo Empanizado con Cangrejo",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "empanizado-res",
+    "name": "Empanizado de Res",
+    "price": 109,
+    "description": "Estilo Empanizado con Res",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "empanizado-pollo",
+    "name": "Empanizado de Pollo",
+    "price": 99,
+    "description": "Estilo Empanizado con Pollo",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "dragon-ball-camarn",
+    "name": "Dragon Ball de Camarón",
+    "price": 109,
+    "description": "Estilo Dragon Ball con Camarón",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "dragon-ball-salmn",
+    "name": "Dragon Ball de Salmón",
+    "price": 139,
+    "description": "Estilo Dragon Ball con Salmón",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "dragon-ball-atn",
+    "name": "Dragon Ball de Atún",
+    "price": 139,
+    "description": "Estilo Dragon Ball con Atún",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "dragon-ball-surimi",
+    "name": "Dragon Ball de Surimi",
+    "price": 109,
+    "description": "Estilo Dragon Ball con Surimi",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "dragon-ball-cangrejo",
+    "name": "Dragon Ball de Cangrejo",
+    "price": 109,
+    "description": "Estilo Dragon Ball con Cangrejo",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "dragon-ball-res",
+    "name": "Dragon Ball de Res",
+    "price": 109,
+    "description": "Estilo Dragon Ball con Res",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "dragon-ball-pollo",
+    "name": "Dragon Ball de Pollo",
+    "price": 99,
+    "description": "Estilo Dragon Ball con Pollo",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "philadelphia-camarn",
+    "name": "Philadelphia de Camarón",
+    "price": 119,
+    "description": "Estilo Philadelphia con Camarón",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "philadelphia-salmn",
+    "name": "Philadelphia de Salmón",
+    "price": 149,
+    "description": "Estilo Philadelphia con Salmón",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "philadelphia-atn",
+    "name": "Philadelphia de Atún",
+    "price": 149,
+    "description": "Estilo Philadelphia con Atún",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "philadelphia-surimi",
+    "name": "Philadelphia de Surimi",
+    "price": 119,
+    "description": "Estilo Philadelphia con Surimi",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "philadelphia-cangrejo",
+    "name": "Philadelphia de Cangrejo",
+    "price": 119,
+    "description": "Estilo Philadelphia con Cangrejo",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "philadelphia-res",
+    "name": "Philadelphia de Res",
+    "price": 119,
+    "description": "Estilo Philadelphia con Res",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "philadelphia-pollo",
+    "name": "Philadelphia de Pollo",
+    "price": 109,
+    "description": "Estilo Philadelphia con Pollo",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "philadelphia-empanizado-camarn",
+    "name": "Philadelphia Empanizado de Camarón",
+    "price": 139,
+    "description": "Estilo Philadelphia Empanizado con Camarón",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "philadelphia-empanizado-salmn",
+    "name": "Philadelphia Empanizado de Salmón",
+    "price": 159,
+    "description": "Estilo Philadelphia Empanizado con Salmón",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "philadelphia-empanizado-atn",
+    "name": "Philadelphia Empanizado de Atún",
+    "price": 159,
+    "description": "Estilo Philadelphia Empanizado con Atún",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "philadelphia-empanizado-surimi",
+    "name": "Philadelphia Empanizado de Surimi",
+    "price": 139,
+    "description": "Estilo Philadelphia Empanizado con Surimi",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "philadelphia-empanizado-cangrejo",
+    "name": "Philadelphia Empanizado de Cangrejo",
+    "price": 139,
+    "description": "Estilo Philadelphia Empanizado con Cangrejo",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "philadelphia-empanizado-res",
+    "name": "Philadelphia Empanizado de Res",
+    "price": 139,
+    "description": "Estilo Philadelphia Empanizado con Res",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "philadelphia-empanizado-pollo",
+    "name": "Philadelphia Empanizado de Pollo",
+    "price": 119,
+    "description": "Estilo Philadelphia Empanizado con Pollo",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "masago-camarn",
+    "name": "Masago de Camarón",
+    "price": 159,
+    "description": "Estilo Masago con Camarón",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "masago-salmn",
+    "name": "Masago de Salmón",
+    "price": 165,
+    "description": "Estilo Masago con Salmón",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "masago-atn",
+    "name": "Masago de Atún",
+    "price": 165,
+    "description": "Estilo Masago con Atún",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "masago-surimi",
+    "name": "Masago de Surimi",
+    "price": 159,
+    "description": "Estilo Masago con Surimi",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "masago-cangrejo",
+    "name": "Masago de Cangrejo",
+    "price": 159,
+    "description": "Estilo Masago con Cangrejo",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "masago-res",
+    "name": "Masago de Res",
+    "price": 159,
+    "description": "Estilo Masago con Res",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "masago-pollo",
+    "name": "Masago de Pollo",
+    "price": 139,
+    "description": "Estilo Masago con Pollo",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "alga-marina-camarn",
+    "name": "Alga Marina de Camarón",
+    "price": 99,
+    "description": "Estilo Alga Marina con Camarón",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "alga-marina-salmn",
+    "name": "Alga Marina de Salmón",
+    "price": 139,
+    "description": "Estilo Alga Marina con Salmón",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "alga-marina-atn",
+    "name": "Alga Marina de Atún",
+    "price": 139,
+    "description": "Estilo Alga Marina con Atún",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "alga-marina-surimi",
+    "name": "Alga Marina de Surimi",
+    "price": 99,
+    "description": "Estilo Alga Marina con Surimi",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "alga-marina-cangrejo",
+    "name": "Alga Marina de Cangrejo",
+    "price": 99,
+    "description": "Estilo Alga Marina con Cangrejo",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "alga-marina-res",
+    "name": "Alga Marina de Res",
+    "price": 99,
+    "description": "Estilo Alga Marina con Res",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "alga-marina-pollo",
+    "name": "Alga Marina de Pollo",
+    "price": 95,
+    "description": "Estilo Alga Marina con Pollo",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "arroz-y-ajonjol-camarn",
+    "name": "Arroz y Ajonjolí de Camarón",
+    "price": 99,
+    "description": "Estilo Arroz y Ajonjolí con Camarón",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "arroz-y-ajonjol-salmn",
+    "name": "Arroz y Ajonjolí de Salmón",
+    "price": 139,
+    "description": "Estilo Arroz y Ajonjolí con Salmón",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "arroz-y-ajonjol-atn",
+    "name": "Arroz y Ajonjolí de Atún",
+    "price": 139,
+    "description": "Estilo Arroz y Ajonjolí con Atún",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "arroz-y-ajonjol-surimi",
+    "name": "Arroz y Ajonjolí de Surimi",
+    "price": 99,
+    "description": "Estilo Arroz y Ajonjolí con Surimi",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "arroz-y-ajonjol-cangrejo",
+    "name": "Arroz y Ajonjolí de Cangrejo",
+    "price": 99,
+    "description": "Estilo Arroz y Ajonjolí con Cangrejo",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "arroz-y-ajonjol-res",
+    "name": "Arroz y Ajonjolí de Res",
+    "price": 99,
+    "description": "Estilo Arroz y Ajonjolí con Res",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "arroz-y-ajonjol-pollo",
+    "name": "Arroz y Ajonjolí de Pollo",
+    "price": 95,
+    "description": "Estilo Arroz y Ajonjolí con Pollo",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "tempura-camarn",
+    "name": "Tempura de Camarón",
+    "price": 99,
+    "description": "Estilo Tempura con Camarón",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "tempura-salmn",
+    "name": "Tempura de Salmón",
+    "price": 139,
+    "description": "Estilo Tempura con Salmón",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "tempura-atn",
+    "name": "Tempura de Atún",
+    "price": 139,
+    "description": "Estilo Tempura con Atún",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "tempura-surimi",
+    "name": "Tempura de Surimi",
+    "price": 99,
+    "description": "Estilo Tempura con Surimi",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "tempura-cangrejo",
+    "name": "Tempura de Cangrejo",
+    "price": 99,
+    "description": "Estilo Tempura con Cangrejo",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "tempura-res",
+    "name": "Tempura de Res",
+    "price": 99,
+    "description": "Estilo Tempura con Res",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "tempura-pollo",
+    "name": "Tempura de Pollo",
+    "price": 95,
+    "description": "Estilo Tempura con Pollo",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "capeado-camarn",
+    "name": "Capeado de Camarón",
+    "price": 99,
+    "description": "Estilo Capeado con Camarón",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "capeado-salmn",
+    "name": "Capeado de Salmón",
+    "price": 139,
+    "description": "Estilo Capeado con Salmón",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "capeado-atn",
+    "name": "Capeado de Atún",
+    "price": 139,
+    "description": "Estilo Capeado con Atún",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "capeado-surimi",
+    "name": "Capeado de Surimi",
+    "price": 99,
+    "description": "Estilo Capeado con Surimi",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "capeado-cangrejo",
+    "name": "Capeado de Cangrejo",
+    "price": 99,
+    "description": "Estilo Capeado con Cangrejo",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "capeado-res",
+    "name": "Capeado de Res",
+    "price": 99,
+    "description": "Estilo Capeado con Res",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "capeado-pollo",
+    "name": "Capeado de Pollo",
+    "price": 95,
+    "description": "Estilo Capeado con Pollo",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "aguacate-y-ajonjol-camarn",
+    "name": "Aguacate y Ajonjolí de Camarón",
+    "price": 119,
+    "description": "Estilo Aguacate y Ajonjolí con Camarón",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "aguacate-y-ajonjol-salmn",
+    "name": "Aguacate y Ajonjolí de Salmón",
+    "price": 149,
+    "description": "Estilo Aguacate y Ajonjolí con Salmón",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "aguacate-y-ajonjol-atn",
+    "name": "Aguacate y Ajonjolí de Atún",
+    "price": 149,
+    "description": "Estilo Aguacate y Ajonjolí con Atún",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "aguacate-y-ajonjol-surimi",
+    "name": "Aguacate y Ajonjolí de Surimi",
+    "price": 119,
+    "description": "Estilo Aguacate y Ajonjolí con Surimi",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "aguacate-y-ajonjol-cangrejo",
+    "name": "Aguacate y Ajonjolí de Cangrejo",
+    "price": 119,
+    "description": "Estilo Aguacate y Ajonjolí con Cangrejo",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "aguacate-y-ajonjol-res",
+    "name": "Aguacate y Ajonjolí de Res",
+    "price": 119,
+    "description": "Estilo Aguacate y Ajonjolí con Res",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "aguacate-y-ajonjol-pollo",
+    "name": "Aguacate y Ajonjolí de Pollo",
+    "price": 109,
+    "description": "Estilo Aguacate y Ajonjolí con Pollo",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "camarn-camarn",
+    "name": "Camarón de Camarón",
+    "price": 139,
+    "description": "Estilo Camarón con Camarón",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "camarn-salmn",
+    "name": "Camarón de Salmón",
+    "price": 159,
+    "description": "Estilo Camarón con Salmón",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "camarn-atn",
+    "name": "Camarón de Atún",
+    "price": 159,
+    "description": "Estilo Camarón con Atún",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "camarn-surimi",
+    "name": "Camarón de Surimi",
+    "price": 139,
+    "description": "Estilo Camarón con Surimi",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "camarn-cangrejo",
+    "name": "Camarón de Cangrejo",
+    "price": 139,
+    "description": "Estilo Camarón con Cangrejo",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "camarn-res",
+    "name": "Camarón de Res",
+    "price": 139,
+    "description": "Estilo Camarón con Res",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "camarn-pollo",
+    "name": "Camarón de Pollo",
+    "price": 119,
+    "description": "Estilo Camarón con Pollo",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "salmn-camarn",
+    "name": "Salmón de Camarón",
+    "price": 159,
+    "description": "Estilo Salmón con Camarón",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "salmn-salmn",
+    "name": "Salmón de Salmón",
+    "price": 169,
+    "description": "Estilo Salmón con Salmón",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "salmn-atn",
+    "name": "Salmón de Atún",
+    "price": 169,
+    "description": "Estilo Salmón con Atún",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "salmn-surimi",
+    "name": "Salmón de Surimi",
+    "price": 159,
+    "description": "Estilo Salmón con Surimi",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "salmn-cangrejo",
+    "name": "Salmón de Cangrejo",
+    "price": 159,
+    "description": "Estilo Salmón con Cangrejo",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "salmn-res",
+    "name": "Salmón de Res",
+    "price": 159,
+    "description": "Estilo Salmón con Res",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "salmn-pollo",
+    "name": "Salmón de Pollo",
+    "price": 148,
+    "description": "Estilo Salmón con Pollo",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "volcn-fuji-camarn",
+    "name": "Volcán Fuji de Camarón",
+    "price": 159,
+    "description": "Estilo Volcán Fuji con Camarón",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "volcn-fuji-salmn",
+    "name": "Volcán Fuji de Salmón",
+    "price": 169,
+    "description": "Estilo Volcán Fuji con Salmón",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "volcn-fuji-atn",
+    "name": "Volcán Fuji de Atún",
+    "price": 169,
+    "description": "Estilo Volcán Fuji con Atún",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "volcn-fuji-surimi",
+    "name": "Volcán Fuji de Surimi",
+    "price": 159,
+    "description": "Estilo Volcán Fuji con Surimi",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "volcn-fuji-cangrejo",
+    "name": "Volcán Fuji de Cangrejo",
+    "price": 159,
+    "description": "Estilo Volcán Fuji con Cangrejo",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "volcn-fuji-res",
+    "name": "Volcán Fuji de Res",
+    "price": 159,
+    "description": "Estilo Volcán Fuji con Res",
+    "category": "Sushi Clásico",
+    "image": ""
+  },
+  {
+    "id": "ebby-maki-crunch",
+    "name": "EBBY MAKI CRUNCH",
+    "price": 216,
+    "description": "Camarón y aguacate. Pepino.  zanahoria",
+    "category": "Sushi Especial",
+    "image": ""
+  },
+  {
+    "id": "takis-roll",
+    "name": "TAKIS ROLL",
+    "price": 225,
+    "description": "Philadelphia y Takis Flamin' Hot. Camarón.  aguacate",
+    "category": "Sushi Especial",
+    "image": ""
+  },
+  {
+    "id": "sushi-pizza",
+    "name": "SUSHI PIZZA",
+    "price": 225,
+    "description": "Empanizado sin alga. Arrachera de cerdo.  aguacate",
+    "category": "Sushi Especial",
+    "image": ""
+  },
+  {
+    "id": "ebby-maki-chicharrn",
+    "name": "EBBY MAKI CHICHARRÓN",
+    "price": 229,
+    "description": "Philadelphia empanizado. Camarón.  pepino",
+    "category": "Sushi Especial",
+    "image": ""
+  },
+  {
+    "id": "bombs-bumm",
+    "name": "BOMBS BUMM",
+    "price": 219,
+    "description": "Dragón ball empanizada. Arrachera de cerdo.  Philadelphia",
+    "category": "Sushi Especial",
+    "image": ""
+  },
+  {
+    "id": "fujiyama-horneado",
+    "name": "FUJIYAMA HORNEADO",
+    "price": 229,
+    "description": "Pastelito arroz. Ensalada Tampico.  aguacate",
+    "category": "Sushi Especial",
+    "image": ""
+  },
+  {
+    "id": "gratinado-especial",
+    "name": "GRATINADO ESPECIAL",
+    "price": 198,
+    "description": "Empanizado. Camarón.  aguacate",
+    "category": "Sushi Especial",
+    "image": ""
+  },
+  {
+    "id": "tepanyaki",
+    "name": "Tepanyaki",
+    "price": 139,
+    "description": "",
+    "category": "Platillos Calientes",
+    "image": ""
+  },
+  {
+    "id": "tepanyaki",
+    "name": "Tepanyaki",
+    "price": 179,
+    "description": "",
+    "category": "Platillos Calientes",
+    "image": ""
+  },
+  {
+    "id": "tepanyaki",
+    "name": "Tepanyaki",
+    "price": 180,
+    "description": "",
+    "category": "Platillos Calientes",
+    "image": ""
+  },
+  {
+    "id": "tepanyaki",
+    "name": "Tepanyaki",
+    "price": 189,
+    "description": "",
+    "category": "Platillos Calientes",
+    "image": ""
+  },
+  {
+    "id": "tepanyaki",
+    "name": "Tepanyaki",
+    "price": 199,
+    "description": "",
+    "category": "Platillos Calientes",
+    "image": ""
+  },
+  {
+    "id": "tepanyaki",
+    "name": "Tepanyaki",
+    "price": 189,
+    "description": "",
+    "category": "Platillos Calientes",
+    "image": ""
+  },
+  {
+    "id": "teriyaki",
+    "name": "Teriyaki",
+    "price": 149,
+    "description": "",
+    "category": "Platillos Calientes",
+    "image": ""
+  },
+  {
+    "id": "teriyaki",
+    "name": "Teriyaki",
+    "price": 189,
+    "description": "",
+    "category": "Platillos Calientes",
+    "image": ""
+  },
+  {
+    "id": "teriyaki",
+    "name": "Teriyaki",
+    "price": 190,
+    "description": "",
+    "category": "Platillos Calientes",
+    "image": ""
+  },
+  {
+    "id": "teriyaki",
+    "name": "Teriyaki",
+    "price": 199,
+    "description": "",
+    "category": "Platillos Calientes",
+    "image": ""
+  },
+  {
+    "id": "teriyaki",
+    "name": "Teriyaki",
+    "price": 209,
+    "description": "",
+    "category": "Platillos Calientes",
+    "image": ""
+  },
+  {
+    "id": "teriyaki",
+    "name": "Teriyaki",
+    "price": 199,
+    "description": "",
+    "category": "Platillos Calientes",
+    "image": ""
+  },
+  {
+    "id": "noodles",
+    "name": "Noodles",
+    "price": 149,
+    "description": "",
+    "category": "Platillos Calientes",
+    "image": ""
+  },
+  {
+    "id": "noodles",
+    "name": "Noodles",
+    "price": 185,
+    "description": "",
+    "category": "Platillos Calientes",
+    "image": ""
+  },
+  {
+    "id": "noodles",
+    "name": "Noodles",
+    "price": 187,
+    "description": "",
+    "category": "Platillos Calientes",
+    "image": ""
+  },
+  {
+    "id": "noodles",
+    "name": "Noodles",
+    "price": 199,
+    "description": "",
+    "category": "Platillos Calientes",
+    "image": ""
+  },
+  {
+    "id": "noodles",
+    "name": "Noodles",
+    "price": 208,
+    "description": "",
+    "category": "Platillos Calientes",
+    "image": ""
+  },
+  {
+    "id": "noodles",
+    "name": "Noodles",
+    "price": 199,
+    "description": "",
+    "category": "Platillos Calientes",
+    "image": ""
+  },
+  {
+    "id": "noriudon",
+    "name": "Noriudon",
+    "price": 149,
+    "description": "",
+    "category": "Platillos Calientes",
+    "image": ""
+  },
+  {
+    "id": "noriudon",
+    "name": "Noriudon",
+    "price": 185,
+    "description": "",
+    "category": "Platillos Calientes",
+    "image": ""
+  },
+  {
+    "id": "noriudon",
+    "name": "Noriudon",
+    "price": 187,
+    "description": "",
+    "category": "Platillos Calientes",
+    "image": ""
+  },
+  {
+    "id": "noriudon",
+    "name": "Noriudon",
+    "price": 199,
+    "description": "",
+    "category": "Platillos Calientes",
+    "image": ""
+  },
+  {
+    "id": "noriudon",
+    "name": "Noriudon",
+    "price": 208,
+    "description": "",
+    "category": "Platillos Calientes",
+    "image": ""
+  },
+  {
+    "id": "noriudon",
+    "name": "Noriudon",
+    "price": 199,
+    "description": "",
+    "category": "Platillos Calientes",
+    "image": ""
+  },
+  {
+    "id": "agridulce-de-naranja",
+    "name": "Agridulce de Naranja",
+    "price": 179,
+    "description": "",
+    "category": "Platillos Calientes",
+    "image": ""
+  },
+  {
+    "id": "agridulce-de-naranja",
+    "name": "Agridulce de Naranja",
+    "price": 199,
+    "description": "",
+    "category": "Platillos Calientes",
+    "image": ""
+  },
+  {
+    "id": "agridulce-de-naranja",
+    "name": "Agridulce de Naranja",
+    "price": 208,
+    "description": "",
+    "category": "Platillos Calientes",
+    "image": ""
+  },
+  {
+    "id": "salmn-al-teriyaki",
+    "name": "Salmón al Teriyaki",
+    "price": 215,
+    "description": "",
+    "category": "Platillos Calientes",
+    "image": ""
+  },
+  {
+    "id": "atn-tataki",
+    "name": "Atún Tataki",
+    "price": 199,
+    "description": "",
+    "category": "Platillos Calientes",
+    "image": ""
+  },
+  {
+    "id": "chap-chep",
+    "name": "Chap-Chep",
+    "price": 149,
+    "description": "",
+    "category": "Platillos Calientes",
+    "image": ""
+  },
+  {
+    "id": "chap-chep",
+    "name": "Chap-Chep",
+    "price": 185,
+    "description": "",
+    "category": "Platillos Calientes",
+    "image": ""
+  },
+  {
+    "id": "chap-chep",
+    "name": "Chap-Chep",
+    "price": 187,
+    "description": "",
+    "category": "Platillos Calientes",
+    "image": ""
+  },
+  {
+    "id": "chap-chep",
+    "name": "Chap-Chep",
+    "price": 199,
+    "description": "",
+    "category": "Platillos Calientes",
+    "image": ""
+  },
+  {
+    "id": "chap-chep",
+    "name": "Chap-Chep",
+    "price": 208,
+    "description": "",
+    "category": "Platillos Calientes",
+    "image": ""
+  },
+  {
+    "id": "chap-chep",
+    "name": "Chap-Chep",
+    "price": 199,
+    "description": "",
+    "category": "Platillos Calientes",
+    "image": ""
+  },
+  {
+    "id": "thai",
+    "name": "Thai",
+    "price": 179,
+    "description": "",
+    "category": "Platillos Calientes",
+    "image": ""
+  },
+  {
+    "id": "thai",
+    "name": "Thai",
+    "price": 199,
+    "description": "",
+    "category": "Platillos Calientes",
+    "image": ""
+  },
+  {
+    "id": "thai",
+    "name": "Thai",
+    "price": 208,
+    "description": "",
+    "category": "Platillos Calientes",
+    "image": ""
+  },
+  {
+    "id": "tamarindo-sweet",
+    "name": "Tamarindo Sweet",
+    "price": 179,
+    "description": "",
+    "category": "Platillos Calientes",
+    "image": ""
+  },
+  {
+    "id": "tamarindo-sweet",
+    "name": "Tamarindo Sweet",
+    "price": 199,
+    "description": "",
+    "category": "Platillos Calientes",
+    "image": ""
+  },
+  {
+    "id": "tamarindo-sweet",
+    "name": "Tamarindo Sweet",
+    "price": 208,
+    "description": "",
+    "category": "Platillos Calientes",
+    "image": ""
+  },
+  {
+    "id": "torta-carnita-maciza",
+    "name": "Torta Carnita Maciza",
+    "price": 65,
+    "description": "",
+    "category": "Tortas",
+    "image": ""
+  },
+  {
+    "id": "torta-buche",
+    "name": "Torta Buche",
+    "price": 69,
+    "description": "",
+    "category": "Tortas",
+    "image": ""
+  },
+  {
+    "id": "torta-lengua",
+    "name": "Torta Lengua",
+    "price": 69,
+    "description": "",
+    "category": "Tortas",
+    "image": ""
+  },
+  {
+    "id": "torta-camarn",
+    "name": "Torta Camarón",
+    "price": 99,
+    "description": "",
+    "category": "Tortas",
+    "image": ""
+  },
+  {
+    "id": "taco-dorado-unidad",
+    "name": "Taco Dorado (unidad)",
+    "price": 14,
+    "description": "",
+    "category": "Tacos",
+    "image": ""
+  },
+  {
+    "id": "orden-carne-3-tacos",
+    "name": "Orden Carne (≈3 tacos)",
+    "price": 18,
+    "description": "",
+    "category": "Tacos",
+    "image": ""
+  },
+  {
+    "id": "orden-buchelengua-3-tacos",
+    "name": "Orden Buche/Lengua (≈3 tacos)",
+    "price": 23,
+    "description": "",
+    "category": "Tacos",
+    "image": ""
+  },
+  {
+    "id": "tostada-buchelenguamixta",
+    "name": "Tostada Buche/Lengua/Mixta",
+    "price": 75,
+    "description": "",
+    "category": "Tostadas",
+    "image": ""
+  },
+  {
+    "id": "tostada-cueritopierna",
+    "name": "Tostada Cuerito/Pierna",
+    "price": 68,
+    "description": "",
+    "category": "Tostadas",
+    "image": ""
+  },
+  {
+    "id": "tostada-vegetariana",
+    "name": "Tostada Vegetariana",
+    "price": 45,
+    "description": "",
+    "category": "Tostadas",
+    "image": ""
+  },
+  {
+    "id": "yakimeshi",
+    "name": "Yakimeshi",
+    "price": 85,
+    "description": "",
+    "category": "Yakimeshi",
+    "image": ""
+  },
+  {
+    "id": "yakimeshi",
+    "name": "Yakimeshi",
+    "price": 85,
+    "description": "",
+    "category": "Yakimeshi",
+    "image": ""
+  },
+  {
+    "id": "yakimeshi",
+    "name": "Yakimeshi",
+    "price": 119,
+    "description": "",
+    "category": "Yakimeshi",
+    "image": ""
+  },
+  {
+    "id": "yakimeshi",
+    "name": "Yakimeshi",
+    "price": 96,
+    "description": "",
+    "category": "Yakimeshi",
+    "image": ""
+  },
+  {
+    "id": "yakimeshi",
+    "name": "Yakimeshi",
+    "price": 99,
+    "description": "",
+    "category": "Yakimeshi",
+    "image": ""
+  },
+  {
+    "id": "yakimeshi",
+    "name": "Yakimeshi",
+    "price": 125,
+    "description": "",
+    "category": "Yakimeshi",
+    "image": ""
+  },
+  {
+    "id": "yakimeshi",
+    "name": "Yakimeshi",
+    "price": 99,
+    "description": "",
+    "category": "Yakimeshi",
+    "image": ""
+  },
+  {
+    "id": "yakimeshi-chico",
+    "name": "Yakimeshi Chico",
+    "price": 0,
+    "description": "",
+    "category": "Yakimeshi",
+    "image": ""
+  },
+  {
+    "id": "yakimeshi-especial",
+    "name": "Yakimeshi Especial",
+    "price": 198,
+    "description": "",
+    "category": "Yakimeshi",
+    "image": ""
+  },
+  {
+    "id": "yakimeshi-especial",
+    "name": "Yakimeshi Especial",
+    "price": 198,
+    "description": "",
+    "category": "Yakimeshi",
+    "image": ""
+  },
+  {
+    "id": "yakimeshi-especial",
+    "name": "Yakimeshi Especial",
+    "price": 198,
+    "description": "",
+    "category": "Yakimeshi",
+    "image": ""
+  },
+  {
+    "id": "agregado",
+    "name": "Agregado",
+    "price": 0,
+    "description": "",
+    "category": "Yakimeshi",
+    "image": ""
+  },
+  {
+    "id": "agregado",
+    "name": "Agregado",
+    "price": 0,
+    "description": "",
+    "category": "Yakimeshi",
+    "image": ""
   }
 ]

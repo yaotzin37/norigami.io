@@ -1,6 +1,0 @@
-/* Botones */
-.button { 
-  padding: .6rem 1rem;
-  border-radius: 6px;
-}
-.button--primary { background: var(--color-primary); color: #fff }

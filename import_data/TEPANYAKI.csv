@@ -1,0 +1,42 @@
+Categoria,Item,Proteina,Precio,Descripcion,Tipo,Tiempo
+Platillos Calientes,Tepanyaki,Vegetariano,139,7 verduras a la plancha, salsa soya, arroz Gohan,Salado,Normal
+Platillos Calientes,Tepanyaki,Pollo,179,7 verduras a la plancha, salsa soya, arroz Gohan,Salado,Normal
+Platillos Calientes,Tepanyaki,Res,180,7 verduras a la plancha, salsa soya, arroz Gohan,Salado,Normal
+Platillos Calientes,Tepanyaki,Camarón,189,7 verduras a la plancha, salsa soya, arroz Gohan,Salado,Normal
+Platillos Calientes,Tepanyaki,Mixto,199,7 verduras a la plancha, salsa soya, arroz Gohan,Salado,Normal
+Platillos Calientes,Tepanyaki,Arrachera de Cerdo,189,7 verduras a la plancha, salsa soya, arroz Gohan,Salado,Normal
+Platillos Calientes,Teriyaki,Vegetariano,149,7 verduras a la plancha, salsa soya, arroz Gohan,Dulce,Normal
+Platillos Calientes,Teriyaki,Pollo,189,7 verduras a la plancha, salsa soya, arroz Gohan,Dulce,Normal
+Platillos Calientes,Teriyaki,Res,190,7 verduras a la plancha, salsa soya, arroz Gohan,Dulce,Normal
+Platillos Calientes,Teriyaki,Camarón,199,7 verduras a la plancha, salsa soya, arroz Gohan,Dulce,Normal
+Platillos Calientes,Teriyaki,Mixto,209,7 verduras a la plancha, salsa soya, arroz Gohan,Dulce,Normal
+Platillos Calientes,Teriyaki,Arrachera de Cerdo,199,7 verduras a la plancha, salsa soya, arroz Gohan,Dulce,Normal
+Platillos Calientes,Noodles,Vegetariano,149,Pasta trigo y huevo, 5 verduras, arroz Gohan,Salado,Normal
+Platillos Calientes,Noodles,Pollo,185,Pasta trigo y huevo, 5 verduras, arroz Gohan,Salado,Normal
+Platillos Calientes,Noodles,Res,187,Pasta trigo y huevo, 5 verduras, arroz Gohan,Salado,Normal
+Platillos Calientes,Noodles,Camarón,199,Pasta trigo y huevo, 5 verduras, arroz Gohan,Salado,Normal
+Platillos Calientes,Noodles,Mixto,208,Pasta trigo y huevo, 5 verduras, arroz Gohan,Salado,Normal
+Platillos Calientes,Noodles,Arrachera de Cerdo,199,Pasta trigo y huevo, 5 verduras, arroz Gohan,Salado,Normal
+Platillos Calientes,Noriudon,Vegetariano,149,Pasta udon, salsa teriyaki, arroz Gohan,Dulce,Normal
+Platillos Calientes,Noriudon,Pollo,185,Pasta udon, salsa teriyaki, arroz Gohan,Dulce,Normal
+Platillos Calientes,Noriudon,Res,187,Pasta udon, salsa teriyaki, arroz Gohan,Dulce,Normal
+Platillos Calientes,Noriudon,Camarón,199,Pasta udon, salsa teriyaki, arroz Gohan,Dulce,Normal
+Platillos Calientes,Noriudon,Mixto,208,Pasta udon, salsa teriyaki, arroz Gohan,Dulce,Normal
+Platillos Calientes,Noriudon,Arrachera de Cerdo,199,Pasta udon, salsa teriyaki, arroz Gohan,Dulce,Normal
+Platillos Calientes,Agridulce de Naranja,Pollo,179,Pollo tempura, salsa agridulce, yakimeshi, ensalada,Dulce,Normal
+Platillos Calientes,Agridulce de Naranja,Camarón,199,Camarón tempura, salsa agridulce, yakimeshi, ensalada,Dulce,Normal
+Platillos Calientes,Agridulce de Naranja,Pollo+Camarón,208,Pollo+Camarón tempura, salsa agridulce, yakimeshi, ensalada,Dulce,Normal
+Platillos Calientes,Salmón al Teriyaki,Salmón,215,Salmón a la plancha, edamames, arroz Gohan, ensalada,Dulce,Normal
+Platillos Calientes,Atún Tataki,Atún,199,Medallón atún selado sésamo, ensalada, arroz Gohan,,Normal
+Platillos Calientes,Chap-Chep,Vegetariano,149,Fideos arroz, 7 verduras, salsa soya, arroz Gohan,Salado,Normal
+Platillos Calientes,Chap-Chep,Pollo,185,Fideos arroz, 7 verduras, salsa soya, arroz Gohan,Salado,Normal
+Platillos Calientes,Chap-Chep,Res,187,Fideos arroz, 7 verduras, salsa soya, arroz Gohan,Salado,Normal
+Platillos Calientes,Chap-Chep,Camarón,199,Fideos arroz, 7 verduras, salsa soya, arroz Gohan,Salado,Normal
+Platillos Calientes,Chap-Chep,Mixto,208,Fideos arroz, 7 verduras, salsa soya, arroz Gohan,Salado,Normal
+Platillos Calientes,Chap-Chep,Arrachera de Cerdo,199,Fideos arroz, 7 verduras, salsa soya, arroz Gohan,Salado,Normal
+Platillos Calientes,Thai,Pollo,179,Pollo tempura, salsa mango, yakimeshi, ensalada,Dulce,Normal
+Platillos Calientes,Thai,Camarón,199,Camarón tempura, salsa mango, yakimeshi, ensalada,Dulce,Normal
+Platillos Calientes,Thai,Pollo+Camarón,208,Pollo+Camarón tempura, salsa mango, yakimeshi, ensalada,Dulce,Normal
+Platillos Calientes,Tamarindo Sweet,Pollo,179,Pollo tempura, salsa tamarindo, yakimeshi, ensalada,Dulce-Picante,Normal
+Platillos Calientes,Tamarindo Sweet,Camarón,199,Camarón tempura, salsa tamarindo, yakimeshi, ensalada,Dulce-Picante,Normal
+Platillos Calientes,Tamarindo Sweet,Pollo+Camarón,208,Pollo+Camarón tempura, salsa tamarindo, yakimeshi, ensalada,Dulce-Picante,Normal

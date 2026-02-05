@@ -1,0 +1,14 @@
+Categoria,Item,Tamaño,Proteina,Precio,Precio_Grande,Descripcion,Especial
+Yakimeshi,Yakimeshi,Mediano,Vegetariano,85,133,Arroz japonés importado 100%,0
+Yakimeshi,Yakimeshi,Mediano,Gohan,85,133,Arroz al vapor,0
+Yakimeshi,Yakimeshi,Mediano,Camarón,119,172,Arroz japonés importado 100%,0
+Yakimeshi,Yakimeshi,Mediano,Pollo,96,146,Arroz japonés importado 100%,0
+Yakimeshi,Yakimeshi,Mediano,Res,99,167,Arroz japonés importado 100%,0
+Yakimeshi,Yakimeshi,Mediano,Mixto,125,179,Arroz japonés importado 100%,0
+Yakimeshi,Yakimeshi,Mediano,Arrachera de Cerdo,99,167,Arroz japonés importado 100%,0
+Yakimeshi,Yakimeshi Chico,Vegetariano,65,,,Arroz japonés importado 100%,0
+Yakimeshi,Yakimeshi Especial,Grande,Al Mango,198,,Camarones tempura, salsa mango y chile quebrado, queso Philadelphia,1
+Yakimeshi,Yakimeshi Especial,Grande,Al Gratin,198,,Arrachera de cerdo, queso manchego gratinado, Philadelphia,1
+Yakimeshi,Yakimeshi Especial,Grande,Crunch,198,,Camarones empanizados, crunch hojaldre,1
+Yakimeshi,Agregado,Culichi,58,,,Philadelphia, aguacate, chipotle, ensalada Tampico, ajonjolí negro,0
+Yakimeshi,Agregado,Philadelphia y Aguacate,49,,,Agregado al yakimeshi grande,0
