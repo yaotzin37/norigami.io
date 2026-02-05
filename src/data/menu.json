@@ -5,7 +5,9 @@
     "category": "yakimeshi",
     "price": 12900,
     "description": "Arroz salteado con pollo, verduras y salsa teriyaki.",
-    "image": "/src/assets/images/menu/yakimeshi/yakimeshi-1.jpg"
+    "images": [
+      "/src/assets/images/menu/yakimeshi/yakimeshi-1.svg"
+    ]
   },
   {
     "id": "sushi-salmon-1",
@@ -13,7 +15,9 @@
     "category": "sushi",
     "price": 4900,
     "description": "Nigiri con salmón fresco.",
-    "image": "/src/assets/images/menu/sushi/salmon-nigiri.jpg"
+    "images": [
+      "/src/assets/images/menu/sushi/salmon-nigiri.svg"
+    ]
   },
   {
     "id": "antojito-gyoza",
@@ -21,7 +25,9 @@
     "category": "antojitos",
     "price": 7900,
     "description": "6 piezas con salsa especial.",
-    "image": "/src/assets/images/menu/antojitos/gyoza.jpg"
+    "images": [
+      "/src/assets/images/menu/antojitos/gyoza.svg"
+    ]
   },
   {
     "id": "combo-ramen",
@@ -29,7 +35,9 @@
     "category": "combos",
     "price": 19900,
     "description": "Ramen tradicional más gyozas.",
-    "image": "/src/assets/images/menu/combos/ramen-combo.jpg"
+    "images": [
+      "/src/assets/images/menu/combos/ramen-combo.svg"
+    ]
   },
   {
     "id": "platillo-caliente-1",
@@ -37,7 +45,9 @@
     "category": "platillos-calientes",
     "price": 3900,
     "description": "Sopa miso tradicional.",
-    "image": "/src/assets/images/menu/platillos-calientes/miso.jpg"
+    "images": [
+      "/src/assets/images/menu/platillos-calientes/miso.svg"
+    ]
   },
   {
     "id": "test-1",
@@ -45,9 +55,8 @@
     "category": "yakimeshi",
     "price": 12900,
     "description": "Ejemplo de yakimeshi para importación.",
-    "image": "/src/assets/images/menu/yakimeshi/yakimeshi-1.jpg",
     "images": [
-      "/src/assets/images/menu/yakimeshi/yakimeshi-1.jpg"
+      "/src/assets/images/menu/yakimeshi/yakimeshi-1.svg"
     ]
   },
   {
@@ -56,9 +65,8 @@
     "category": "sushi",
     "price": 4900,
     "description": "Ejemplo de nigiri para importación.",
-    "image": "/src/assets/images/menu/sushi/salmon-nigiri.jpg",
     "images": [
-      "/src/assets/images/menu/sushi/salmon-nigiri.jpg"
+      "/src/assets/images/menu/sushi/salmon-nigiri.svg"
     ]
   }
 ]
