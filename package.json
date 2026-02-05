@@ -6,7 +6,9 @@
     "start": "echo \"Start script not implemented\"",
     "build": "echo \"Build script not implemented\"",
     "import:menu": "node scripts/import-menu.js",
-    "compress:images": "node scripts/compress-images.js"
+    "compress:images": "node scripts/compress-images.js",
+    "generate:webp": "node scripts/generate-webp.js",
+    "attach:webp": "node scripts/attach-webp-to-menu.js"
   },
   "devDependencies": {
     "glob": "^8.1.0",
