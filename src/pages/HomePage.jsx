@@ -1,8 +1,23 @@
 import { Link, useNavigate } from 'react-router-dom';
 import BottomNav from '../components/common/BottomNav';
+import menu from '../data/menu.json';
+import { slugify } from '../utils/slugify';
 
 const HomePage = () => {
     const navigate = useNavigate();
+
+    // Get unique categories from menu
+    const categories = [...new Set(menu.map(item => item.category))];
+
+    // Image mapping for specific categories
+    const categoryImages = {
+        'Entradas': 'https://lh3.googleusercontent.com/aida-public/AB6AXuC2q4y8k2pRDOsKdfrGi0BnxBntxbee2MIY90cXeSJO5ULiE8sc0fOO-kCJ8GteJT4Yj1PQDDqLQlf_23RkmjTJ05O99FB4jFsF9K57Fyh51DNkecTtym3SlVJ7FxKQC54EJdfljTOmB--bBVVU1OucTzMqT8rCHQV4kmdLq1gShqtxKpqJyPzykxqYF6PadF6Sd2NiQR2i9TmNExau2kijAeY4ZLmu1hqrPsuOVagmWyv7mCGMzmc86DV7ZgDmvN2yOAsHi7vqNIQ', // Was "Antojitos"
+        'Bebidas': 'https://lh3.googleusercontent.com/aida-public/AB6AXuBFS9t-rLQcYmC1C2hJr7HXvRzaujBiOKozcang8eeQ1uvSsteKzdbnisv91ecS3uo6VyGZmPG8-b9iGu5GJdl2WLPLYL3r5r36PedjeanqSp0MkBS5qhIVzkJ7LEvCN_LrfZCdzwvaPGmSHvVbzWVXAdcw04T7IN__DAOA7VNQTFAVoaY2IGcDl4uQPnm8m9t41R0WPtSIGEkJTyQMEIoZGVNHPmnM1IW0Pu7Di5dzk32zIExWw02PTBd-zcbm16lqO3M_y5hexow',
+        'Sushi Clásico': 'https://lh3.googleusercontent.com/aida-public/AB6AXuCwvlhdZE6zEVHc9XRj-Gw7kQBk6HpScqFGjRlK13TjPv0vWnXMikKUWqjBIICt3xtYW0Yt0X49DJS7qV-7_wwISACs_SJkQ0vi-5rm_KzkhWEKQhEYLJnB2qINUNKJp7UzK-2j09EjDIpQ9wg-wodpZaRFF4KL9TsvCUzLaZ9zupajNnqTgtqw8QCMehkqYrlK0HrCk1BfB-8cBXl9t7OrEqWxfYdkqIyxfHUlDLp8UVeCq5idU9m8kzYYQTZrUo3_ERPw9tlMcO4', // Was "Sashimi"
+        // Default image for others
+        'default': 'https://lh3.googleusercontent.com/aida-public/AB6AXuBtd8rB3-DGwMsyTmbSobwGpnt6Qyula8ntZDbj_Yjt6Ue93LCiCvZJH5XOdxBp-y65UIxVK9n7jmA594VaME8cWyBFeuVi-dA5RG8tAFb1Qce6gQNFh2otPY0t4Y_wnEDRBb3gEXLL6uJeo7f94_DYif3-fYk962Vlttlw7bTRc8LEjFW1xnZ9cne_mxm90ohm-qpwOxdAZima8lvXP2k94RCuwsI-RtCPaPy81XuLcJ1GlVIOijdNy1WE7Xp-I0LO-I_WjOHe-2s'
+    };
+
     return (
         <div className="relative flex min-h-screen w-full flex-col max-w-md mx-auto shadow-2xl overflow-x-hidden pb-32">
             <div className="flex items-center bg-black/80 backdrop-blur-md sticky top-0 z-50 p-4 pb-2 justify-between border-b border-white/5">
@@ -61,14 +76,14 @@ const HomePage = () => {
             </div>
 
             <div className="grid grid-cols-2 gap-3 p-4">
-                {[
-                    { name: 'Handrolls', img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBtd8rB3-DGwMsyTmbSobwGpnt6Qyula8ntZDbj_Yjt6Ue93LCiCvZJH5XOdxBp-y65UIxVK9n7jmA594VaME8cWyBFeuVi-dA5RG8tAFb1Qce6gQNFh2otPY0t4Y_wnEDRBb3gEXLL6uJeo7f94_DYif3-fYk962Vlttlw7bTRc8LEjFW1xnZ9cne_mxm90ohm-qpwOxdAZima8lvXP2k94RCuwsI-RtCPaPy81XuLcJ1GlVIOijdNy1WE7Xp-I0LO-I_WjOHe-2s' },
-                    { name: 'Sashimi', img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCwvlhdZE6zEVHc9XRj-Gw7kQBk6HpScqFGjRlK13TjPv0vWnXMikKUWqjBIICt3xtYW0Yt0X49DJS7qV-7_wwISACs_SJkQ0vi-5rm_KzkhWEKQhEYLJnB2qINUNKJp7UzK-2j09EjDIpQ9wg-wodpZaRFF4KL9TsvCUzLaZ9zupajNnqTgtqw8QCMehkqYrlK0HrCk1BfB-8cBXl9t7OrEqWxfYdkqIyxfHUlDLp8UVeCq5idU9m8kzYYQTZrUo3_ERPw9tlMcO4' },
-                    { name: 'Antojitos', img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuC2q4y8k2pRDOsKdfrGi0BnxBntxbee2MIY90cXeSJO5ULiE8sc0fOO-kCJ8GteJT4Yj1PQDDqLQlf_23RkmjTJ05O99FB4jFsF9K57Fyh51DNkecTtym3SlVJ7FxKQC54EJdfljTOmB--bBVVU1OucTzMqT8rCHQV4kmdLq1gShqtxKpqJyPzykxqYF6PadF6Sd2NiQR2i9TmNExau2kijAeY4ZLmu1hqrPsuOVagmWyv7mCGMzmc86DV7ZgDmvN2yOAsHi7vqNIQ' },
-                    { name: 'Bebidas', img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBFS9t-rLQcYmC1C2hJr7HXvRzaujBiOKozcang8eeQ1uvSsteKzdbnisv91ecS3uo6VyGZmPG8-b9iGu5GJdl2WLPLYL3r5r36PedjeanqSp0MkBS5qhIVzkJ7LEvCN_LrfZCdzwvaPGmSHvVbzWVXAdcw04T7IN__DAOA7VNQTFAVoaY2IGcDl4uQPnm8m9t41R0WPtSIGEkJTyQMEIoZGVNHPmnM1IW0Pu7Di5dzk32zIExWw02PTBd-zcbm16lqO3M_y5hexow' }
-                ].map((cat) => (
-                    <Link key={cat.name} to="/category/fusion" className="bg-cover bg-center flex flex-col items-center rounded-xl justify-end p-4 aspect-[4/5] border border-white/10 relative overflow-hidden group active:scale-95 transition-transform" style={{ backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.2) 50%), url("${cat.img}")` }}>
-                        <p className="text-white text-base font-black uppercase italic tracking-tighter z-10">{cat.name}</p>
+                {categories.map((cat) => (
+                    <Link
+                        key={cat}
+                        to={`/category/${slugify(cat)}`}
+                        className="bg-cover bg-center flex flex-col items-center rounded-xl justify-end p-4 aspect-[4/5] border border-white/10 relative overflow-hidden group active:scale-95 transition-transform"
+                        style={{ backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.2) 50%), url("${categoryImages[cat] || categoryImages['default']}")` }}
+                    >
+                        <p className="text-white text-base font-black uppercase italic tracking-tighter z-10 text-center">{cat}</p>
                         <div className="absolute bottom-0 left-0 h-1 w-full bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform"></div>
                     </Link>
                 ))}

@@ -34,7 +34,7 @@ const ProductPage = () => {
             </div>
 
             <div className="relative w-full h-[450px]">
-                <div className="w-full h-full bg-center bg-no-repeat bg-cover" style={{ backgroundImage: 'url("https://lh3.googleusercontent.com/aida-public/AB6AXuD_B0CTrquWMJP-4qbRZqkn_n6zI0FoYFhbb4xVjI2JS84I6vG1wfz03dKvUTHn64US75jmEqkxSkHTnMZaJ_PzwVkyccYbTtUSmgHzSDLreMK6FQy-88Wb5BwXyEYL9Nbuh231rFakqrFrOJeemgyYbl5i1HIXeQOzBDUb65PuAVLy6GgQ-7LJbnZUE-P16OOJH6idQN7ce10IOCuUXYMppEliggf3u3Oz9DmA-1QSCk5M644VclH60Z5CDfrQcX6icUlGvmUUziY")' }}></div>
+                <div className="w-full h-full bg-center bg-no-repeat bg-cover" style={{ backgroundImage: `url("${displayImage}")` }}></div>
                 <div className="absolute inset-0 barra-gradient"></div>
                 <div className="absolute bottom-20 left-6 opacity-20 scale-75 origin-left">
                     <div className="text-3xl font-black italic tracking-tighter">NORIGAMI</div>
@@ -46,12 +46,12 @@ const ProductPage = () => {
                     <div className="flex justify-between items-end">
                         <div className="flex-1">
                             <div className="flex items-center gap-2 mb-1">
-                                <span className="bg-primary text-white text-[10px] font-black px-2 py-0.5 rounded italic uppercase">FUSION SPECIAL</span>
+                                <span className="bg-primary text-white text-[10px] font-black px-2 py-0.5 rounded italic uppercase">{product.category}</span>
                             </div>
-                            <h1 className="text-4xl font-extrabold tracking-tight leading-none uppercase italic">Ahumado<br />Tuna Roll</h1>
+                            <h1 className="text-4xl font-extrabold tracking-tight leading-none uppercase italic">{name}</h1>
                         </div>
                         <div className="text-right">
-                            <span className="text-primary text-3xl font-black tracking-tighter italic">$12.50</span>
+                            <span className="text-primary text-3xl font-black tracking-tighter italic">${price}</span>
                         </div>
                     </div>
                     <div className="flex items-center gap-3">
@@ -59,13 +59,14 @@ const ProductPage = () => {
                             <span className="material-symbols-outlined text-primary text-sm fill-1">star</span>
                             <span className="text-sm font-bold ml-1">4.9</span>
                         </div>
-                        <span className="text-xs opacity-50 font-medium">Popular barra choice</span>
+                        <span className="text-xs opacity-50 font-medium">Popular choice</span>
                     </div>
                     <p className="text-slate-300 text-lg leading-snug font-medium italic">
-                        Smoked wild-caught tuna, avocado, and cream cheese, topped with crispy onions and our signature Mexican chipotle-ponzu glaze.
+                        {description || "Delicious fusion cuisine made with fresh ingredients."}
                     </p>
                 </div>
 
+                {/* Static Options Demo */}
                 <div className="space-y-6">
                     <h3 className="text-sm font-black uppercase tracking-[0.2em] text-primary border-l-4 border-primary pl-3">Customize it</h3>
                     <div className="bg-white/5 rounded-2xl p-5 border border-white/10 space-y-4">
@@ -143,7 +144,7 @@ const ProductPage = () => {
                         <span className="material-symbols-outlined text-xl">home</span>
                         <span className="text-[10px] font-bold uppercase tracking-tighter">Home</span>
                     </Link>
-                    <Link to="/category/fusion" className="flex flex-col items-center gap-1 text-primary">
+                    <Link to="/category/sushi-clasico" className="flex flex-col items-center gap-1 text-primary">
                         <span className="material-symbols-outlined text-xl fill-1">restaurant_menu</span>
                         <span className="text-[10px] font-bold uppercase tracking-tighter">Menu</span>
                     </Link>

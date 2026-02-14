@@ -232,7 +232,7 @@
     "image": ""
   },
   {
-    "id": "spaghetti-oriental",
+    "id": "spaghetti-oriental-1",
     "name": "Spaghetti Oriental",
     "price": null,
     "description": "",
@@ -240,7 +240,7 @@
     "image": ""
   },
   {
-    "id": "spaghetti-oriental",
+    "id": "spaghetti-oriental-2",
     "name": "Spaghetti Oriental",
     "price": null,
     "description": "",
@@ -248,7 +248,7 @@
     "image": ""
   },
   {
-    "id": "spaghetti-oriental",
+    "id": "spaghetti-oriental-3",
     "name": "Spaghetti Oriental",
     "price": null,
     "description": "",
@@ -256,7 +256,7 @@
     "image": ""
   },
   {
-    "id": "spaghetti-oriental",
+    "id": "spaghetti-oriental-4",
     "name": "Spaghetti Oriental",
     "price": null,
     "description": "",
@@ -272,7 +272,7 @@
     "image": ""
   },
   {
-    "id": "rollitos-primavera",
+    "id": "rollitos-primavera-2",
     "name": "Rollitos Primavera",
     "price": 32,
     "description": "",
@@ -280,7 +280,7 @@
     "image": ""
   },
   {
-    "id": "rollitos-primavera",
+    "id": "rollitos-primavera-3",
     "name": "Rollitos Primavera",
     "price": 93,
     "description": "",
@@ -304,7 +304,7 @@
     "image": ""
   },
   {
-    "id": "kushiyaki",
+    "id": "kushiyaki-2",
     "name": "Kushiyaki",
     "price": 32,
     "description": "",
@@ -312,7 +312,7 @@
     "image": ""
   },
   {
-    "id": "kushiyaki",
+    "id": "kushiyaki-3",
     "name": "Kushiyaki",
     "price": 93,
     "description": "",
@@ -1712,7 +1712,7 @@
     "image": ""
   },
   {
-    "id": "yakimeshi",
+    "id": "yakimeshi-2",
     "name": "Yakimeshi",
     "price": 85,
     "description": "",
@@ -1720,7 +1720,7 @@
     "image": ""
   },
   {
-    "id": "yakimeshi",
+    "id": "yakimeshi-3",
     "name": "Yakimeshi",
     "price": 119,
     "description": "",
@@ -1728,7 +1728,7 @@
     "image": ""
   },
   {
-    "id": "yakimeshi",
+    "id": "yakimeshi-4",
     "name": "Yakimeshi",
     "price": 96,
     "description": "",
@@ -1736,7 +1736,7 @@
     "image": ""
   },
   {
-    "id": "yakimeshi",
+    "id": "yakimeshi-5",
     "name": "Yakimeshi",
     "price": 99,
     "description": "",
@@ -1744,7 +1744,7 @@
     "image": ""
   },
   {
-    "id": "yakimeshi",
+    "id": "yakimeshi-6",
     "name": "Yakimeshi",
     "price": 125,
     "description": "",
@@ -1752,7 +1752,7 @@
     "image": ""
   },
   {
-    "id": "yakimeshi",
+    "id": "yakimeshi-7",
     "name": "Yakimeshi",
     "price": 99,
     "description": "",
