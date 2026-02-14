@@ -8,7 +8,7 @@ const BottomNav = ({ activeTab }) => {
                     <span className={`material-symbols-outlined text-[28px] ${activeTab === 'home' ? 'fill-1' : ''}`}>home</span>
                     <span className="text-[10px] font-black uppercase tracking-tighter italic">Home</span>
                 </Link>
-                <Link to="/category/fusion" className={`flex flex-col items-center gap-1 ${activeTab === 'menu' ? 'text-primary' : 'text-white/40'} group cursor-pointer hover:text-white transition-colors`}>
+                <Link to="/category/sushi-clasico" className={`flex flex-col items-center gap-1 ${activeTab === 'menu' ? 'text-primary' : 'text-white/40'} group cursor-pointer hover:text-white transition-colors`}>
                     <span className={`material-symbols-outlined text-[28px] ${activeTab === 'menu' ? 'fill-1' : ''}`}>restaurant_menu</span>
                     <span className="text-[10px] font-black uppercase tracking-tighter italic">Menu</span>
                 </Link>

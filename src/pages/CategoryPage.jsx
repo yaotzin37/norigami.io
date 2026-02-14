@@ -1,18 +1,16 @@
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import menu from '../data/menu.json';
+import { slugify } from '../utils/slugify';
 
 const CategoryPage = () => {
     const navigate = useNavigate();
     const { categoryId } = useParams();
 
-    const slugify = text => text.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]+/g, '');
+    // Filter products based on the slug
+    const products = menu.filter(p => slugify(p.category) === categoryId);
 
-    // Alias 'fusion' to 'sushi-especial-mamalon' based on CSV filename/category?
-    // CSV category is 'Sushi Especial'. Slug -> 'sushi-especial'.
-    const targetCategory = categoryId === 'fusion' ? 'sushi-especial' : categoryId;
-
-    const products = menu.filter(p => slugify(p.category) === targetCategory);
-
+    // Get the display name for the category from the first found product, or fallback to the slug
+    const categoryName = products.length > 0 ? products[0].category : categoryId.replace(/-/g, ' ');
 
     return (
         <div className="max-w-md mx-auto min-h-screen bg-background-dark text-white pb-48">
@@ -22,7 +20,7 @@ const CategoryPage = () => {
                         <button onClick={() => navigate(-1)} className="flex size-10 items-center justify-center rounded-full bg-white/5 active:bg-white/20 transition-colors">
                             <span className="material-symbols-outlined text-2xl">arrow_back_ios_new</span>
                         </button>
-                        <h1 className="text-xl font-heading fusion-text tracking-tighter italic">Fusion Rolls</h1>
+                        <h1 className="text-xl font-heading fusion-text tracking-tighter italic capitalize">{categoryName}</h1>
                     </div>
                     <div className="flex items-center gap-2">
                         <button className="flex size-10 items-center justify-center rounded-full bg-white/5 active:bg-white/20 transition-colors">
@@ -50,32 +48,38 @@ const CategoryPage = () => {
             </div>
 
             <div className="flex flex-col gap-4 px-4">
-                {products.map(p => (
-                    <div key={p.id} onClick={() => navigate(`/product/${p.id}`)} className="group bg-neutral-900/50 rounded-2xl overflow-hidden border border-white/5 active:border-primary/50 transition-all cursor-pointer">
-                        <div className="flex">
-                            <div className="relative shrink-0 w-32 h-40">
-                                <div className="w-full h-full bg-center bg-cover" style={{ backgroundImage: `url("${p.image || 'https://lh3.googleusercontent.com/aida-public/AB6AXuC3u8I7aaPIZBrhBdF6KqAAIvQRiUNGQrem2ehVw5-PHen9HNZHKDA6TA9C90627KNTOcbrBATB5UPXWOjJ2ZOiZ7dKFprkkL6UJruC9KRPtDIWWX8G_rg1FDzjVDbWMz1K2_7ANpCVb6S--bW_4wnYQpN4MnZAxW-oPBxKUekvVLlq7dLbQ7ZApVmgumRJWRqW4i4lvT5xV7wSGABeem0EUDrFmyJyaVx14tY7S8GvfGbBkkyU62o87TAsFmy2ok7aGVIpzaRaAjY'}")` }}></div>
-                                <div className="absolute inset-0 bg-gradient-to-r from-transparent to-neutral-900/50"></div>
-                            </div>
-                            <div className="flex flex-1 flex-col justify-between p-4">
-                                <div>
-                                    <div className="flex justify-between items-start mb-1">
-                                        <h3 className="text-lg font-heading fusion-text italic">{p.name}</h3>
-                                        <span className="text-primary font-heading italic">${p.price}</span>
-                                    </div>
-                                    <p className="text-slate-400 text-xs font-medium uppercase tracking-tight leading-tight line-clamp-3">
-                                        {p.description}
-                                    </p>
+                {products.length === 0 ? (
+                    <div className="text-center text-white/50 py-10">
+                        <p>No products found in this category.</p>
+                    </div>
+                ) : (
+                    products.map(p => (
+                        <div key={p.id} onClick={() => navigate(`/product/${p.id}`)} className="group bg-neutral-900/50 rounded-2xl overflow-hidden border border-white/5 active:border-primary/50 transition-all cursor-pointer">
+                            <div className="flex">
+                                <div className="relative shrink-0 w-32 h-40">
+                                    <div className="w-full h-full bg-center bg-cover" style={{ backgroundImage: `url("${p.image || 'https://lh3.googleusercontent.com/aida-public/AB6AXuC3u8I7aaPIZBrhBdF6KqAAIvQRiUNGQrem2ehVw5-PHen9HNZHKDA6TA9C90627KNTOcbrBATB5UPXWOjJ2ZOiZ7dKFprkkL6UJruC9KRPtDIWWX8G_rg1FDzjVDbWMz1K2_7ANpCVb6S--bW_4wnYQpN4MnZAxW-oPBxKUekvVLlq7dLbQ7ZApVmgumRJWRqW4i4lvT5xV7wSGABeem0EUDrFmyJyaVx14tY7S8GvfGbBkkyU62o87TAsFmy2ok7aGVIpzaRaAjY'}")` }}></div>
+                                    <div className="absolute inset-0 bg-gradient-to-r from-transparent to-neutral-900/50"></div>
                                 </div>
-                                <div className="flex justify-end mt-4">
-                                    <button className="flex items-center justify-center gap-2 rounded-lg h-10 px-6 bg-primary text-white text-xs font-heading fusion-text active:scale-95 transition-all shadow-[0_4px_20px_0_rgba(242,13,13,0.4)]">
-                                        <span>Add to Order</span>
-                                    </button>
+                                <div className="flex flex-1 flex-col justify-between p-4">
+                                    <div>
+                                        <div className="flex justify-between items-start mb-1">
+                                            <h3 className="text-lg font-heading fusion-text italic">{p.name}</h3>
+                                            <span className="text-primary font-heading italic">${p.price}</span>
+                                        </div>
+                                        <p className="text-slate-400 text-xs font-medium uppercase tracking-tight leading-tight line-clamp-3">
+                                            {p.description}
+                                        </p>
+                                    </div>
+                                    <div className="flex justify-end mt-4">
+                                        <button className="flex items-center justify-center gap-2 rounded-lg h-10 px-6 bg-primary text-white text-xs font-heading fusion-text active:scale-95 transition-all shadow-[0_4px_20px_0_rgba(242,13,13,0.4)]">
+                                            <span>Add to Order</span>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                ))}
+                    ))
+                )}
             </div>
 
             <footer className="fixed bottom-0 left-0 right-0 z-50 bg-background-dark/95 backdrop-blur-md border-t border-white/5">
@@ -95,10 +99,10 @@ const CategoryPage = () => {
                         <span className="material-symbols-outlined text-2xl">home</span>
                         <span className="text-[10px] font-bold uppercase tracking-widest">Home</span>
                     </Link>
-                    <button className="flex flex-col items-center gap-1 text-primary">
+                    <Link to="/category/sushi-clasico" className="flex flex-col items-center gap-1 text-primary">
                         <span className="material-symbols-outlined text-2xl fill-1">restaurant_menu</span>
                         <span className="text-[10px] font-bold uppercase tracking-widest">Menu</span>
-                    </button>
+                    </Link>
                     <button className="flex flex-col items-center gap-1 text-slate-500">
                         <span className="material-symbols-outlined text-2xl">receipt_long</span>
                         <span className="text-[10px] font-bold uppercase tracking-widest">Orders</span>
